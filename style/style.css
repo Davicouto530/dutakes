@@ -41,17 +41,18 @@ header nav {
     background-color: #23232e;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    z-index: 10;
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 0;
     opacity: 0;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .nav-list li:first-child {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .nav-list li a {
@@ -74,7 +75,7 @@ header nav {
     display: block;
     cursor: pointer;
     margin-right: 25px;
-    z-index: 10;
+    z-index: 11;
 }
 
 .mobile-menu div {
@@ -110,16 +111,41 @@ header nav {
         transform: translateX(0);
     }
 }
-
 /* ---------- Fim do cabeçalho ---------- */
+
+/* ---------- Slide com Swiper JS ----------*/
+#slide {
+    margin-top: 30px;
+}
+
+#slide h2 {
+    text-align: center;
+}
+
+.swiper {
+    width: 350px;
+    height: 200px;
+}
+
+.swiper-slide {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 250px;
+}
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
     .nav-list {
-        position: static; /* Remove o posicionamento absoluto */
-        transform: none; /* Remove a translação usada no mobile */
+        position: static;
+        /* Remove o posicionamento absoluto */
+        transform: none;
+        /* Remove a translação usada no mobile */
         flex-direction: row;
-        gap: 30px; /* Mais espaçamento horizontal */
+        gap: 30px;
+        /* Mais espaçamento horizontal */
         background-color: transparent;
         align-items: center;
         justify-content: flex-end;
@@ -128,7 +154,8 @@ header nav {
 
     .nav-list li {
         opacity: 1;
-        margin: 0; /* Remove margens do mobile */
+        margin: 0;
+        /* Remove margens do mobile */
         animation: none !important;
     }
 
@@ -137,11 +164,13 @@ header nav {
     }
 
     .nav-list.active {
-        display: flex; /* Garante que o menu sempre apareça no desktop */
+        display: flex;
+        /* Garante que o menu sempre apareça no desktop */
         transform: none;
     }
 
     .mobile-menu {
-        display: none; /* Esconde o ícone do menu hamburguer */
+        display: none;
+        /* Esconde o ícone do menu hamburguer */
     }
 }

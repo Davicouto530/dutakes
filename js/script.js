@@ -10,16 +10,16 @@ class MobileNavbar {
 
     animateLinks() {
         this.navLinks.forEach((link, index) => {
-            link.style.animation 
-            ? (link.style.animation = "")
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
+            link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
 
         });
     }
 
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass)
+        this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
 
@@ -28,7 +28,7 @@ class MobileNavbar {
     }
 
     init() {
-        if(this.mobileMenu){
+        if (this.mobileMenu) {
             this.addClickEvent();
         }
         return this;
@@ -42,3 +42,17 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+// Swiper JS Carrosel
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    }
+});
