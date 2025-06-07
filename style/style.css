@@ -31,10 +31,10 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 45px;
+    gap: 5px;
     list-style: none;
     position: absolute;
-    top: 15vh;
+    top: 11vh;
     right: 0;
     width: 50vw;
     height: 100vh;
@@ -47,6 +47,11 @@ header nav {
     letter-spacing: 3px;
     margin-left: 0;
     opacity: 0;
+    margin-top: 40px;
+}
+
+.nav-list li:first-child {
+    margin-top: 40px;
 }
 
 .nav-list li a {
@@ -68,7 +73,8 @@ header nav {
 .mobile-menu {
     display: block;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 25px;
+    z-index: 10;
 }
 
 .mobile-menu div {
@@ -105,20 +111,37 @@ header nav {
     }
 }
 
+/* ---------- Fim do cabeçalho ---------- */
+
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
     .nav-list {
-        margin-top: 0px;
-        height: 100px;
-        display: flex;
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a translação usada no mobile */
+        flex-direction: row;
+        gap: 30px; /* Mais espaçamento horizontal */
+        background-color: transparent;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+
+    .nav-list li {
+        opacity: 1;
+        margin: 0; /* Remove margens do mobile */
+        animation: none !important;
+    }
+
+    .nav-list li:first-child {
+        margin-top: 0;
     }
 
     .nav-list.active {
-        display: none;
+        display: flex; /* Garante que o menu sempre apareça no desktop */
+        transform: none;
     }
 
     .mobile-menu {
-        display: none;
-        cursor: pointer;
+        display: none; /* Esconde o ícone do menu hamburguer */
     }
 }
