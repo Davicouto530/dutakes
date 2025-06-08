@@ -16,6 +16,13 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 /* ---------- Celular em pé ----------*/
 header nav {
     height: 110px;
@@ -23,8 +30,12 @@ header nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background-color: #23232e;
-    color: #fff;
+    background-color: #ebddcc;
+    color: #000;
+}
+
+header nav h1{
+    margin-left: 30px;
 }
 
 .nav-list {
@@ -38,7 +49,7 @@ header nav {
     right: 0;
     width: 50vw;
     height: 100vh;
-    background-color: #23232e;
+    background-color: #ebddcc;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     z-index: 10;
@@ -56,10 +67,7 @@ header nav {
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
+    color: #000;
     transition: 0.3s;
 }
 
@@ -81,7 +89,7 @@ header nav {
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: #000;
     margin: 8px;
     transition: 0.3s;
 }
@@ -111,6 +119,7 @@ header nav {
         transform: translateX(0);
     }
 }
+
 /* ---------- Fim do cabeçalho ---------- */
 
 /* ---------- Slide com Swiper JS ----------*/
@@ -120,6 +129,16 @@ header nav {
 
 #slide h2 {
     text-align: center;
+}
+
+#slide p {
+    margin-top: 10px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    border: 3px solid #000;
 }
 
 .swiper {
@@ -149,7 +168,8 @@ header nav {
         background-color: transparent;
         align-items: center;
         justify-content: flex-end;
-        margin-right: 15px;
+        margin-right: 20px;
+        margin-bottom: 25px;
     }
 
     .nav-list li {
@@ -165,12 +185,35 @@ header nav {
 
     .nav-list.active {
         display: flex;
-        /* Garante que o menu sempre apareça no desktop */
         transform: none;
     }
 
     .mobile-menu {
         display: none;
-        /* Esconde o ícone do menu hamburguer */
+    }
+
+    /* ---------- Slide com Swiper JS ----------*/
+    #slide {
+        margin-top: 40px;
+    }
+
+    #slide h2 {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+
+    .swiper {
+        width: 470px;
+        height: 280px;
+    }
+
+    .swiper-slide {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        width: 350px;
     }
 }
