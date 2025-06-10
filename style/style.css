@@ -13,7 +13,6 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
 }
 
 a {
@@ -34,7 +33,7 @@ header nav {
     color: #000;
 }
 
-header nav h1{
+header nav h1 {
     margin-left: 30px;
 }
 
@@ -124,26 +123,22 @@ header nav h1{
 
 /* ---------- Slide com Swiper JS ----------*/
 #slide {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #slide h2 {
     text-align: center;
-}
-
-#slide p {
-    margin-top: 10px;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    padding: 8px;
-    text-align: center;
-    width: 160px;
-    border: 3px solid #000;
+    margin: 20px 0px;
 }
 
 .swiper {
     width: 350px;
     height: 200px;
+    margin-bottom: 15px;
+}
+
+.swiper-button-prev {
+    width: 20px;
 }
 
 .swiper-slide {
@@ -154,6 +149,67 @@ header nav h1{
 .swiper-slide img {
     width: 250px;
 }
+
+#slide p {
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    border: 3px solid #000;
+    transition: 0.3s ease;
+}
+
+#slide p:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* ---------- Fim do swiper ---------- */
+
+/* ---------- Area sobre ---------- */
+#sobre {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa {
+    width: 330px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+}
+
+#img-sobre img {
+    width: 280px;
+    margin-bottom: 30px;
+}
+
+#texto-link p {
+    max-width: 280px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+#texto-link a {
+    letter-spacing: 2px;
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    border: 3px solid #000;
+    transition: 0.3s ease;
+}
+
+#texto-link a:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- FIM Area sobre ---------- */
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
@@ -169,7 +225,8 @@ header nav h1{
         align-items: center;
         justify-content: flex-end;
         margin-right: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
+        z-index: 0;
     }
 
     .nav-list li {
@@ -195,6 +252,7 @@ header nav h1{
     /* ---------- Slide com Swiper JS ----------*/
     #slide {
         margin-top: 40px;
+        z-index: 10;
     }
 
     #slide h2 {
@@ -210,10 +268,31 @@ header nav h1{
 
     .swiper-slide {
         margin-top: 20px;
-        text-align: center;
     }
 
     .swiper-slide img {
         width: 350px;
     }
+
+    /* ---------- FIM Slide com Swiper JS ----------*/
+
+    /* ---------- Area sobre ---------- */
+    #caixa {
+        width: 700px;
+        height: 400px;
+        flex-direction: row;
+    }
+
+    #caixa img {
+        width: 380px;
+        height: 350px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    #texto-link p {
+        margin-bottom: 20px;
+    }
 }
+
+@media (min-width: 992px) {}
