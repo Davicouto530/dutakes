@@ -57,8 +57,17 @@ header nav h1 {
     cursor: pointer;
 }
 
+#mobile-menu {
+    display: none;
+}
+
 #mobile-menu.active {
     display: flex;
+    justify-content: start;
+}
+
+.nav-item {
+    list-style: none;
 }
 
 /* ---------- Fim do cabeçalho ---------- */
