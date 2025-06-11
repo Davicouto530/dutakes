@@ -23,13 +23,15 @@ a {
 }
 
 /* ---------- Celular em pé ----------*/
-header nav {
+
+/* ---------- Inicio do cabeçalho ---------- */
+header {
     height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background-color: #ebddcc;
+    background-color: #fff9ea;
     color: #000;
 }
 
@@ -37,86 +39,26 @@ header nav h1 {
     margin-left: 30px;
 }
 
-.nav-list {
+#navbar {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    list-style: none;
-    position: absolute;
-    top: 11vh;
-    right: 0;
-    width: 50vw;
-    height: 100vh;
-    background-color: #ebddcc;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    z-index: 10;
+    justify-content: space-between;
 }
 
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 0;
-    opacity: 0;
-    padding-top: 40px;
+.nav-list {
+    display: none;
 }
 
-.nav-list li:first-child {
-    margin-top: 15px;
-}
-
-.nav-list li a {
-    color: #000;
-    transition: 0.3s;
-}
-
-.nav-list li a:hover {
-    opacity: 0.7;
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-.mobile-menu {
+#mobile-btn {
     display: block;
+    background-color: transparent;
+    font-size: 1.7rem;
     cursor: pointer;
-    margin-right: 25px;
-    z-index: 11;
 }
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #000;
-    margin: 8px;
-    transition: 0.3s;
-}
-
-/* ----------Fazendo o X do menu hamb ---------- */
-.mobile-menu.active .line1 {
-    transform: rotate(-47deg) translate(-22px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(47deg) translate(-5px, 7px);
-}
-
-/* ---------- Animação com Keyframes ---------- */
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+#mobile-menu.active {
+    display: flex;
 }
 
 /* ---------- Fim do cabeçalho ---------- */
@@ -214,38 +156,20 @@ header nav h1 {
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
     .nav-list {
-        position: static;
-        /* Remove o posicionamento absoluto */
-        transform: none;
-        /* Remove a translação usada no mobile */
-        flex-direction: row;
-        gap: 30px;
-        /* Mais espaçamento horizontal */
-        background-color: transparent;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 20px;
-        margin-bottom: 35px;
-        z-index: 0;
-    }
-
-    .nav-list li {
-        opacity: 1;
-        margin: 0;
-        /* Remove margens do mobile */
-        animation: none !important;
-    }
-
-    .nav-list li:first-child {
-        margin-top: 0;
-    }
-
-    .nav-list.active {
         display: flex;
-        transform: none;
+        list-style: none;
+        gap: 48px;
     }
 
-    .mobile-menu {
+    .nav-item.active a {
+        border-bottom: 3px solid black;
+    }
+
+    #mobile-btn {
+        display: none;
+    }
+
+    #mobile-menu {
         display: none;
     }
 

@@ -8,6 +8,12 @@
     <title>DuTakes</title>
     <link rel="stylesheet" href="style/style.css">
 
+    <!--Link para o cdn do jquery-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    
+    <!--Link do cdn para icones no fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
     <!-- CSS para o Swiper JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
@@ -16,25 +22,31 @@
     <!-- Inicio do header -->
     <header>
         <!-- Menu -->
-        <nav>
+        <nav id="navbar">
             <!-- Logotipo -->
             <h1>DuTakes</h1>
             <!-- <img src="img/" alt=""> -->
 
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
             <ul class="nav-list">
-                <li><a href="index.html">home</a></li>
-                <li><a href="portifolio.html">portifólio</a></li>
-                <li><a href="#">dicas</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">contato</a></li>
+                <li class="nav-item active"><a href="index.html">home</a></li>
+                <li class="nav-item"><a href="portifolio.html">portifólio</a></li>
+                <li class="nav-item"><a href="#">dicas</a></li>
+                <li class="nav-item"><a href="#">sobre</a></li>
+                <li class="nav-item"><a href="#">contato</a></li>
             </ul>
+
+            <button id="mobile-btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
+
+        <div id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item"><a href="index.html">home</a></li>
+                <li class="nav-item"><a href="portifolio.html">portifólio</a></li>
+                <li class="nav-item"><a href="#">dicas</a></li>
+                <li class="nav-item"><a href="#">sobre</a></li>
+                <li class="nav-item"><a href="#">contato</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Fim do header -->
 
