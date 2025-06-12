@@ -48,12 +48,12 @@ header nav h1 {
 
 #menu-icon {
     display: block;
-    z-index: 20;
+    z-index: 5;
     background-color: transparent;
 }
 
-#menu-icon i {
-    font-size: 1.5rem;
+#menu-icon img {
+    width: 30px;
     margin-right: 20px;
 }
 
@@ -70,7 +70,7 @@ header nav h1 {
     flex-direction: column;
     gap: 40px;
     text-align: center;
-    z-index: 20;
+    z-index: 5;
 }
 
 .nav-list li {
@@ -200,7 +200,7 @@ header nav h1 {
     /* ---------- Slide com Swiper JS ----------*/
     #slide {
         margin-top: 40px;
-        z-index: 10;
+        z-index: 2;
     }
 
     #slide h2 {
