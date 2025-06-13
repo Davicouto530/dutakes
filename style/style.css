@@ -87,6 +87,7 @@ header nav h1 {
 .nav-list.ativo {
     left: 50%;
 }
+
 /* ---------- Fim do cabeçalho ---------- */
 
 /* ---------- Slide com Swiper JS ----------*/
@@ -96,13 +97,14 @@ header nav h1 {
 
 #slide h2 {
     text-align: center;
-    margin: 20px 0px;
+    margin: 20px auto;
+    max-width: 280px;
 }
 
 .swiper {
     width: 350px;
     height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .swiper-slide {
@@ -138,7 +140,7 @@ header nav h1 {
 
 /* ---------- Area sobre ---------- */
 #sobre {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,22 +157,22 @@ header nav h1 {
     box-shadow: 3px 10px 8px 0px #00000094;
 }
 
-#img-sobre img {
+.img-sobre img {
     width: 280px;
     margin: 0px 0px 30px 0px;
 }
 
-#texto-link h2 {
+.texto-link h2 {
     margin: 20px 0px;
 }
 
-#texto-link p {
+.texto-link p {
     max-width: 280px;
     margin-bottom: 45px;
     text-align: justify;
 }
 
-#texto-link a {
+.texto-link a {
     letter-spacing: 2px;
     padding: 8px;
     text-align: center;
@@ -179,11 +181,65 @@ header nav h1 {
     transition: 0.3s ease;
 }
 
-#texto-link a:hover {
+.texto-link a:hover {
     transform: scale(1.05);
 }
 
 /* ---------- FIM Area sobre ---------- */
+
+/* ---------- Inicio da area galeria ---------- */
+#galeria {
+    position: relative;
+    margin-top: 150px;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/img2.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.conteudo-galeria {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+.conteudo-galeria h2 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.conteudo-galeria p {
+    font-size: 1.2em;
+    text-align: center;
+    min-width: 320px;
+    margin-bottom: 40px;
+}
+
+.conteudo-galeria a {
+    margin-top: 30px;
+    border: 3px solid #fff;
+    padding: 12px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* ---------- FIM da area galeria ---------- */
 
 /*Smartphone Landscape*/
 
@@ -199,17 +255,40 @@ header nav h1 {
 
     #caixa {
         min-width: 450px;
-        min-height: 680px;
+        min-height: 690px;
     }
 
-    #img-sobre img {
+    .img-sobre img {
         width: 380px;
         margin: 30px 0px;
     }
 
-    #texto-link p {
+    .texto-link p {
         max-width: 380px;
         margin-bottom: 35px;
+    }
+
+    /*Galeria*/
+    #galeria {
+        height: 400px;
+        width: 100%;
+    }
+
+    .conteudo-galeria {
+        padding: 50px 20px;
+    }
+
+    .conteudo-galeria h2 {
+        letter-spacing: 4px;
+    }
+
+    .conteudo-galeria p {
+        max-width: 420px;
+        margin: 40px auto;
+    }
+
+    .conteudo-galeria a {
+        margin-top: 180px;
     }
 }
 
@@ -247,6 +326,7 @@ header nav h1 {
         text-transform: uppercase;
         font-size: 1.2em;
         letter-spacing: 2px;
+        max-width: 460px;
     }
 
     .swiper {
@@ -272,14 +352,14 @@ header nav h1 {
         margin: 30px 0px;
     }
 
-    #img-sobre img {
+    .img-sobre img {
         max-width: 320px;
         height: 340px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
 
-    #texto-link {
+    .texto-link {
         height: 340px;
         max-width: 320px;
         background-color: #fff;
@@ -288,15 +368,14 @@ header nav h1 {
         padding: 20px;
     }
 
-    #texto-link h2 {
+    .texto-link h2 {
         margin: 10px 0px;
     }
 
-    #texto-link p {
+    .texto-link p {
         margin-bottom: 25px;
         font-size: 0.9em;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -310,6 +389,10 @@ header nav h1 {
         width: 400px;
     }
 
+    #slide h2 {
+        max-width: 640px;
+    }
+
     /* ---------- Area sobre ---------- */
     #caixa {
         min-width: 850px;
@@ -318,24 +401,24 @@ header nav h1 {
         margin: 30px 0px;
     }
 
-    #img-sobre img {
+    .img-sobre img {
         max-width: 400px;
         height: 440px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
 
-    #texto-link {
+    .texto-link {
         height: 440px;
         max-width: 400px;
         padding: 40px;
     }
 
-    #texto-link h2 {
+    .texto-link h2 {
         margin: 30px 0px;
     }
 
-    #texto-link p {
+    .texto-link p {
         margin-bottom: 30px;
         font-size: 0.9em;
     }
