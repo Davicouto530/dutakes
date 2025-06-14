@@ -461,6 +461,46 @@
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
+
+    .borda {
+        width: 500px;
+    }
+
+    /* ---------- Inicio da area de contato ---------- */
+    #contato {
+        width: 500px;
+    }
+
+    #contato .texto-contato h2 {
+        font-size: 1.4em;
+        letter-spacing: 3px;
+        margin: 30px 0px;
+    }
+
+    #contato .texto-contato p {
+        letter-spacing: -1px;
+        margin: 30px 0px;
+    }
+
+    #contato .entre-em-contato .p-criarAlgo {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        margin: 20px 0px 30px 0px;
+    }
+
+    #contato .entre-em-contato h2 {
+        margin: 20px 0px 30px 0px;
+    }
+
+    #contato .entre-em-contato .p-linkContato {
+        transition: all 0.3s ease;
+    }
+
+    #contato .entre-em-contato .p-linkContato:hover {
+        transform: scale(1.05);
+    }
+
+    /* ---------- FIM da area de contato ---------- */
 }
 
 /*Desktop*/
@@ -554,6 +594,54 @@
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
+
+    .borda {
+        width: 650px;
+    }
+
+    /* ---------- Inicio da area de contato ---------- */
+    #contato {
+        flex-direction: row;
+        width: 800px;
+    }
+
+    #contato .texto-contato {
+        width: 360px;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    #contato .texto-contato h2 {
+        font-size: 1.3em;
+        margin: 30px 0px;
+    }
+
+    #contato .texto-contato p {
+        letter-spacing: 1px;
+        margin: 20px 0px;
+    }
+
+    #contato .entre-em-contato {
+        width: 360px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    #contato .entre-em-contato .p-criarAlgo {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        margin: 20px 0px 40px 0px;
+    }
+
+    #contato .entre-em-contato h2 {
+        margin: 20px 0px 50px 0px;
+    }
+
+    #contato .entre-em-contato .p-linkContato {
+        margin: 40px 0px 30px 0px;
+    }
+
+    /* ---------- FIM da area de contato ---------- */
 }
 
 @media (min-width: 1200px) {
