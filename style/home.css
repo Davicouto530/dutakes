@@ -223,6 +223,66 @@
 
 /* ---------- FIM da area de fotos exibicao ---------- */
 
+.arroba-instagram {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.borda {
+    border-top: 1px solid black;
+    box-shadow: 5px 2px 8px 0px black;
+    margin: 80px auto;
+    width: 300px;
+}
+
+/* ---------- Inicio da area de contato ---------- */
+#contato {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contato .texto-contato h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+#contato .texto-contato p {
+    letter-spacing: -1px;
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+#contato .entre-em-contato .p-criarAlgo {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    margin: 20px 0px 30px 0px;
+}
+
+#contato .entre-em-contato h2 {
+    margin: 20px 0px 30px 0px;
+}
+
+#contato .entre-em-contato .p-linkContato {
+    margin: 40px 0px 30px 0px;
+}
+
+#contato .entre-em-contato .p-linkContato a {
+    letter-spacing: 2px;
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    border: 3px solid #000;
+    transition: 0.3s ease;
+}
+
+/* ---------- FIM da area de contato ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -385,12 +445,19 @@
 
     /* ---------- Inicio da area de fotos exibicao ---------- */
     #fotos-exibicao .coluna {
-        width: 240px;
+        width: 260px;
         margin: 40px 30px;
     }
 
     #fotos-exibicao .coluna img {
         width: 220px;
+        transition: all 0.5s ease;
+        padding: 20px 0px;
+    }
+
+    #fotos-exibicao .coluna img:hover {
+        transform: scale(1.01);
+        cursor: pointer;
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
@@ -477,19 +544,20 @@
     }
 
     #fotos-exibicao .coluna {
-        width: 220px;
+        width: 230px;
         margin: 30px 20px;
     }
 
     #fotos-exibicao .coluna img {
         width: 200px;
-        padding: 10px 0px;
+        padding: 20px 0px;
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
 }
 
 @media (min-width: 1200px) {
+
     /* ---------- Inicio da area de fotos exibicao ---------- */
     #fotos-exibicao .coluna {
         width: 260px;
