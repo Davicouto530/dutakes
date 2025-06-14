@@ -194,6 +194,35 @@
 
 /* ---------- FIM da area de cards ---------- */
 
+/* ---------- Inicio da area de fotos exibicao ---------- */
+#fotos-exibicao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#fotos-exibicao .area {
+    display: flex;
+    flex-direction: row;
+}
+
+#fotos-exibicao .coluna {
+    background-color: rgb(239, 239, 239);
+    width: 160px;
+    text-align: center;
+    margin: 20px 10px;
+    box-shadow: 3px 2px 8px 0px #000;
+}
+
+#fotos-exibicao .coluna img {
+    width: 140px;
+    padding: 10px 0px;
+}
+
+/* ---------- FIM da area de fotos exibicao ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -243,6 +272,18 @@
     .conteudo-galeria a {
         margin-top: 180px;
     }
+
+    /* ---------- Inicio da area de fotos exibicao ---------- */
+    #fotos-exibicao .coluna {
+        width: 200px;
+        margin: 30px 20px;
+    }
+
+    #fotos-exibicao .coluna img {
+        width: 180px;
+    }
+
+    /* ---------- FIM da area de fotos exibicao ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -339,7 +380,20 @@
         max-width: 280px;
         margin: 25px 0px 40px 0px;
     }
+
     /* ---------- FIM da area de cards ---------- */
+
+    /* ---------- Inicio da area de fotos exibicao ---------- */
+    #fotos-exibicao .coluna {
+        width: 240px;
+        margin: 40px 30px;
+    }
+
+    #fotos-exibicao .coluna img {
+        width: 220px;
+    }
+
+    /* ---------- FIM da area de fotos exibicao ---------- */
 }
 
 /*Desktop*/
@@ -414,5 +468,38 @@
         max-width: 280px;
         margin: 25px 0px 40px 0px;
     }
+
     /* ---------- FIM da area de cards ---------- */
+
+    /* ---------- Inicio da area de fotos exibicao ---------- */
+    #fotos-exibicao {
+        flex-direction: row;
+    }
+
+    #fotos-exibicao .coluna {
+        width: 220px;
+        margin: 30px 20px;
+    }
+
+    #fotos-exibicao .coluna img {
+        width: 200px;
+        padding: 10px 0px;
+    }
+
+    /* ---------- FIM da area de fotos exibicao ---------- */
+}
+
+@media (min-width: 1200px) {
+    /* ---------- Inicio da area de fotos exibicao ---------- */
+    #fotos-exibicao .coluna {
+        width: 260px;
+        margin: 30px 20px;
+    }
+
+    #fotos-exibicao .coluna img {
+        width: 240px;
+        padding: 10px 0px;
+    }
+
+    /* ---------- FIM da area de fotos exibicao ---------- */
 }
