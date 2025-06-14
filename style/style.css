@@ -95,11 +95,44 @@ header nav h1 {
 
 /* ---------- Fim do cabeçalho ---------- */
 
+/* ---------- Inicio do rodapé ---------- */
+#rodape {
+    margin: 30px 0px 60px 0px;
+}
+
+#navbarRodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarRodape .nav-list-rodape {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes-sociais .a-redes {
+    margin: 40px 0px;
+}
+
+/* ---------- FIM do rodapé ---------- */
+
 /*Smartphone Landscape*/
 
-@media (min-width: 576px) {
-    
-}
+@media (min-width: 576px) {}
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
@@ -127,5 +160,29 @@ header nav h1 {
 }
 
 @media (min-width: 992px) {
-    
+
+    /* ---------- Inicio do rodapé ---------- */
+    #rodape {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 40px 0px;
+    }
+
+    #redes-sociais {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 30px;
+    }
+
+    #navbarRodape {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #navbarRodape .nav-list-rodape {
+        flex-direction: row;
+    }
+
+    /* ---------- FIM do rodapé ---------- */
 }

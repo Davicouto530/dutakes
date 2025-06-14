@@ -224,8 +224,12 @@
 /* ---------- FIM da area de fotos exibicao ---------- */
 
 .arroba-instagram {
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px auto;
 }
 
 .borda {

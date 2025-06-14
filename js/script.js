@@ -5,7 +5,7 @@ menuIcon.addEventListener('click', () => {
     if (ul.classList.contains('ativo')) {
         ul.classList.remove('ativo');
         document.querySelector('#menu-icon img').src = 'img/burger-bar.png'
-    }else {
+    } else {
         ul.classList.add('ativo');
         document.querySelector('#menu-icon img').src = 'img/close.png';
     }
@@ -20,3 +20,12 @@ const swiper = new Swiper('.swiper', {
         prevEl: ".swiper-button-prev",
     }
 });
+
+// Colocando o ano automaticamente 
+const pRodape = document.getElementById("pAno");
+const data = new Date();
+
+const dataAno = data.getFullYear();
+
+pRodape.innerHTML += ` ${dataAno} fotografias de dutakes`;
+
