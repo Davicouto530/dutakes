@@ -84,6 +84,50 @@
 
 /* ---------- FIM da area sobre2 ---------- */
 
+/* ---------- Inicio da area fotos sobre ---------- */
+#fotos-sobre {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 100px;
+}
+
+#fotos-sobre .img-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotos-sobre .img-foto img {
+    width: 340px;
+}
+
+.img-sobre1 {
+    height: 280px;
+}
+
+.img-sobre2 {
+    height: 240px;
+}
+
+.img-sobre3 {
+    height: 300px;
+}
+
+.img-sobre4 {
+    height: 380px;
+}
+
+.img-sobre5 {
+    height: 280px;
+}
+
+.img-sobre6 {
+    height: 320px;
+}
+
+/* ---------- FIM da area fotos sobre ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -119,6 +163,42 @@
     }
 
     /* ---------- FIM da area sobre2 ---------- */
+
+    /* ---------- Inicio da area fotos sobre ---------- */
+    /* #fotos-sobre {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #fotos-sobre .img-foto img {
+        width: 240px;
+    }
+
+    .img-sobre1 {
+        height: 280px;
+    }
+
+    .img-sobre2 {
+        height: 240px;
+    }
+
+    .img-sobre3 {
+        height: 300px;
+    }
+
+    .img-sobre4 {
+        height: 380px;
+    }
+
+    .img-sobre5 {
+        height: 280px;
+    }
+
+    .img-sobre6 {
+        height: 320px;
+    } */
+
+    /* ---------- FIM da area fotos sobre ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -160,7 +240,8 @@
     /* ---------- FIM da area sobre ---------- */
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
+
     /* ---------- Inicio da area sobre2 ---------- */
     #caixa2 {
         min-width: 600px;
