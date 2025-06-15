@@ -53,6 +53,37 @@
 
 /* ---------- FIM Area sobre ---------- */
 
+/* ---------- Inicio da area sobre2 ---------- */
+#sobre2 {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa2 {
+    min-width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sobre2 img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.texto-sobre2 p {
+    text-align: justify;
+    letter-spacing: -1px;
+    margin: 20px 0px;
+    max-width: 300px;
+}
+
+/* ---------- FIM da area sobre2 ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -71,10 +102,28 @@
         max-width: 380px;
         margin-bottom: 45px;
     }
+
+    /* ---------- Inicio da area sobre2 ---------- */
+    #caixa2 {
+        min-width: 600px;
+        min-height: 300px;
+    }
+
+    .img-sobre2 img {
+        width: 520px;
+    }
+
+    .texto-sobre2 p {
+        letter-spacing: 1px;
+        max-width: 520px;
+    }
+
+    /* ---------- FIM da area sobre2 ---------- */
 }
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
+
     /* ---------- Area sobre ---------- */
     #caixa {
         min-width: 720px;
@@ -107,6 +156,29 @@
         margin-bottom: 40px;
         font-size: 0.9em;
     }
+
     /* ---------- FIM da area sobre ---------- */
 }
 
+@media (min-width: 992px){
+    /* ---------- Inicio da area sobre2 ---------- */
+    #caixa2 {
+        min-width: 600px;
+        min-height: 300px;
+        flex-direction: row;
+    }
+
+    .img-sobre2 img {
+        width: 550px;
+        height: 340px;
+        margin-bottom: 0px;
+        margin-right: 60px;
+    }
+
+    .texto-sobre2 p {
+        letter-spacing: 1px;
+        max-width: 240px;
+    }
+
+    /* ---------- FIM da area sobre2 ---------- */
+}
