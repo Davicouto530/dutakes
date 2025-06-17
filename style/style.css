@@ -140,6 +140,10 @@ header nav h1 {
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -165,9 +169,6 @@ header nav h1 {
     .icon-li {
         display: none;
     }
-}
-
-@media (min-width: 992px) {
 
     /* ---------- Inicio do rodapé ---------- */
     #rodape {

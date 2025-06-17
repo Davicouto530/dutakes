@@ -86,44 +86,16 @@
 
 /* ---------- Inicio da area fotos sobre ---------- */
 #fotos-sobre {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 100px;
 }
 
-#fotos-sobre .img-foto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#fotos-sobre .img-foto img {
+#fotos-sobre img {
     width: 340px;
-}
-
-.img-sobre1 {
-    height: 280px;
-}
-
-.img-sobre2 {
-    height: 240px;
-}
-
-.img-sobre3 {
-    height: 300px;
-}
-
-.img-sobre4 {
-    height: 380px;
-}
-
-.img-sobre5 {
-    height: 280px;
-}
-
-.img-sobre6 {
-    height: 320px;
 }
 
 /* ---------- FIM da area fotos sobre ---------- */
@@ -157,48 +129,16 @@
         width: 520px;
     }
 
+    .texto-sobre2 {
+        margin-top: 140px;
+    }
+
     .texto-sobre2 p {
         letter-spacing: 1px;
         max-width: 520px;
     }
 
     /* ---------- FIM da area sobre2 ---------- */
-
-    /* ---------- Inicio da area fotos sobre ---------- */
-    /* #fotos-sobre {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    #fotos-sobre .img-foto img {
-        width: 240px;
-    }
-
-    .img-sobre1 {
-        height: 280px;
-    }
-
-    .img-sobre2 {
-        height: 240px;
-    }
-
-    .img-sobre3 {
-        height: 300px;
-    }
-
-    .img-sobre4 {
-        height: 380px;
-    }
-
-    .img-sobre5 {
-        height: 280px;
-    }
-
-    .img-sobre6 {
-        height: 320px;
-    } */
-
-    /* ---------- FIM da area fotos sobre ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -238,6 +178,21 @@
     }
 
     /* ---------- FIM da area sobre ---------- */
+
+    #fotos-sobre {
+        gap: 30px;
+    }
+
+    #fotos-sobre .img-foto img {
+        width: 260px;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+    #fotos-sobre .img-foto img:hover {
+        transform: scale(1.02);
+        box-shadow: 2px 2px 5px 0px #000;
+    }
 }
 
 @media (min-width: 992px) {
@@ -262,4 +217,12 @@
     }
 
     /* ---------- FIM da area sobre2 ---------- */
+
+    #fotos-sobre {
+        gap: 30px;
+    }
+
+    #fotos-sobre .img-foto img {
+        width: 280px;
+    }
 }
