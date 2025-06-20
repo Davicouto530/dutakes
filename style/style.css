@@ -59,7 +59,7 @@ header nav h1 {
 }
 
 #menu-icon img {
-    width: 30px;
+    width: 25px;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -94,6 +94,30 @@ header nav h1 {
 }
 
 /* ---------- Fim do cabeçalho ---------- */
+
+/* ---------- Inicio do arroba do instagram ---------- */
+
+.arroba-instagram {
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.arroba-instagram:hover {
+    transform: scale(1.0);
+}
+
+/* ---------- Fim do arroba do instagram ---------- */
+
+.borda {
+    border-top: 1px solid black;
+    box-shadow: 5px 2px 8px 0px black;
+    margin: 80px auto;
+    width: 300px;
+}
 
 /* ---------- Inicio do rodapé ---------- */
 #rodape {
@@ -140,10 +164,13 @@ header nav h1 {
 
 /* ---------- Tablets ---------- */
 @media (min-width: 768px) {
-    
+    .borda {
+        width: 500px;
+    }
 }
 
 @media (min-width: 992px) {
+
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -160,6 +187,7 @@ header nav h1 {
 
     .nav-item.active a {
         border-bottom: 3px solid black;
+
     }
 
     #menu-icon {
@@ -196,4 +224,8 @@ header nav h1 {
     }
 
     /* ---------- FIM do rodapé ---------- */
+
+    .borda {
+        width: 650px;
+    }
 }

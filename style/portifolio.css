@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* ---------- Inicio da area sobre o meu trabalho ---------- */
+#sobre-meu-trabalho {
+    text-align: center;
+}
+
+#sobre-meu-trabalho h2 {
+    text-align: left;
+    margin: 80px 0px 40px 35px;
+}
+
+#sobre-meu-trabalho p {
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* ---------- FIM da area sobre o meu trabalho ---------- */
+
+/*Smartphone Landscape*/
+
+@media (min-width: 576px) {
+
+    /* ---------- Inicio da area sobre o meu trabalho ---------- */
+    #sobre-meu-trabalho h2 {
+        margin: 80px 0px 40px 55px;
+    }
+
+    #sobre-meu-trabalho p {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    /* ---------- FIM da area sobre o meu trabalho ---------- */
+}
+
+/* ---------- Tablets ---------- */
+@media (min-width: 768px) {}
+
+/* ---------- Tablets deitados ---------- */
+@media (min-width: 992px) {}

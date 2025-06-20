@@ -224,22 +224,6 @@
 
 /* ---------- FIM da area de fotos exibicao ---------- */
 
-.arroba-instagram {
-    text-transform: lowercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 50px auto;
-}
-
-.borda {
-    border-top: 1px solid black;
-    box-shadow: 5px 2px 8px 0px black;
-    margin: 80px auto;
-    width: 300px;
-}
-
 /* ---------- Inicio da area de contato ---------- */
 #contato {
     display: flex;
@@ -472,10 +456,6 @@
 
     /* ---------- FIM da area de fotos exibicao ---------- */
 
-    .borda {
-        width: 500px;
-    }
-
     /* ---------- Inicio da area de contato ---------- */
     #contato {
         width: 500px;
@@ -604,10 +584,6 @@
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
-
-    .borda {
-        width: 650px;
-    }
 
     /* ---------- Inicio da area de contato ---------- */
     #contato {

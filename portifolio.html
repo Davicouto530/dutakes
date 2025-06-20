@@ -7,44 +7,85 @@
     <meta name="description" content="Fotos e videos">
     <title>DuTakes</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/portifolio.css">
+    <!--Link do cdn para icones no fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS para o Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- Inicio do header -->
-    <header>
+    <header id="header">
         <!-- Menu -->
-        <nav>
+        <nav id="navbar">
             <!-- Logotipo -->
-            <h2>logotipo</h2>
+            <h1>DuTakes</h1>
             <!-- <img src="img/" alt=""> -->
 
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
             <ul class="nav-list">
-                <li><a href="index.html">home</a></li>
-                <li><a href="portifolio.html">portifólio</a></li>
-                <li><a href="#">dicas</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">contato</a></li>
+                <li class="nav-item active"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="sobre.html">sobre</a></li>
+                <li class="nav-item"><a href="portifolio.html">portifólio</a></li>
+                <li class="nav-item"><a href="#">dicas</a></li>
+                <li class="nav-item"><a href="#">contato</a></li>
+                <li class="nav-item icon-navbar icon-li"><a href="https://www.instagram.com/du.takes/" target="_blank"
+                        class="arroba-instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
+
+
+            <div id="menu-icon">
+                <img src="img/burger-bar.png" alt="">
+            </div>
         </nav>
     </header>
     <!-- Fim do header -->
 
+    <main id="container">
+        <section id="sobre-meu-trabalho">
+            <h2>Sobre o meu trabalho</h2>
 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut quo vero? Fuga ut, recusandae ab eos architecto accusamus eum dolorum enim, repudiandae amet deleniti sint, suscipit earum rerum dignissimos!
+            Possimus repellat magnam doloribus quo natus dolor laborum.</p>
+        </section>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <h2><a href="https://www.instagram.com/du.takes/" target="_blank" class="arroba-instagram">@dutakes</a></h2>
+
+        <div class="borda"></div>
+    </main>
+
+    <footer id="rodape">
+        <nav id="navbarRodape">
+
+            <ul class="nav-list-rodape">
+                <li class="nav-item active"><a href="index.html">home</a></li>
+                <li class="nav-item"><a href="portifolio.html">sobre</a></li>
+                <li class="nav-item"><a href="#">portifólio</a></li>
+                <li class="nav-item"><a href="#">dicas</a></li>
+                <li class="nav-item"><a href="#">contato</a></li>
+            </ul>
+
+        </nav>
+
+        <div id="redes-sociais">
+            <p id="pAno">&copy;</p>
+
+            <a class="a-redes icon-navbar" target="_blank" href="https://www.instagram.com/du.takes/"><i
+                    class="fa-brands fa-instagram"></i></a>
+
+            <a class="icon-navbar" href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+
+    </footer>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Seu script -->
+    <!-- script -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
