@@ -2,34 +2,74 @@
 
 /* ---------- Inicio da area sobre o meu trabalho ---------- */
 #sobre-meu-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    margin-top: 80px;
 }
 
 #sobre-meu-trabalho h2 {
-    text-align: left;
-    margin: 80px 0px 40px 35px;
+    margin-bottom: 40px;
 }
 
 #sobre-meu-trabalho p {
     line-height: 1.5em;
-    margin: 0 auto;
     max-width: 300px;
-    text-align: left;
 }
 
 /* ---------- FIM da area sobre o meu trabalho ---------- */
+
+/* ---------- Slide com Swiper JS ----------*/
+#slide {
+    margin-top: 50px;
+}
+
+#slide h2 {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 340px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.swiper {
+    width: 350px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.swiper-slide .swiper-img img {
+    width: 180px;
+}
+
+.swiper-slide .swiper-texto p {
+    margin-top: 10px;
+}
+
+#slide p {
+    
+}
+
+.swiper-pagination::after {
+    color: #000;
+}
+
+/* ---------- Fim do swiper ---------- */
 
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
 
     /* ---------- Inicio da area sobre o meu trabalho ---------- */
-    #sobre-meu-trabalho h2 {
-        margin: 80px 0px 40px 55px;
-    }
-
     #sobre-meu-trabalho p {
-        margin: 0 auto;
         max-width: 500px;
     }
 
@@ -37,7 +77,42 @@
 }
 
 /* ---------- Tablets ---------- */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* ---------- Inicio da area sobre o meu trabalho ---------- */
+    #sobre-meu-trabalho {
+        gap: 40px;
+        flex-direction: row;
+    }
+
+    #sobre-meu-trabalho h2 {
+        margin-bottom: 0px;
+        font-size: 1.8em;
+    }
+
+    #sobre-meu-trabalho p {
+        text-align: justify;
+        max-width: 340px;
+    }
+
+    /* ---------- FIM da area sobre o meu trabalho ---------- */
+}
 
 /* ---------- Tablets deitados ---------- */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /* ---------- Inicio da area sobre o meu trabalho ---------- */
+    #sobre-meu-trabalho {
+        gap: 100px;
+    }
+
+    #sobre-meu-trabalho h2 {
+        font-size: 2.1em;
+    }
+
+    #sobre-meu-trabalho p {
+        max-width: 420px;
+    }
+
+    /* ---------- FIM da area sobre o meu trabalho ---------- */
+}

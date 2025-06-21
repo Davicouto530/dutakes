@@ -496,13 +496,13 @@
 /*Desktop*/
 @media (min-width: 992px) {
     .swiper {
-        width: 520px;
+        width: 960px;
         height: 280px;
         margin-bottom: 40px;
     }
 
     .swiper-slide img {
-        width: 400px;
+        width: 360px;
     }
 
     #slide h2 {
