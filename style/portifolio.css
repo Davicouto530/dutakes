@@ -21,48 +21,40 @@
 
 /* ---------- FIM da area sobre o meu trabalho ---------- */
 
-/* ---------- Slide com Swiper JS ----------*/
-#slide {
-    margin-top: 50px;
+/* ---------- Inicio da area de modelos de fotos ---------- */
+#modelos-fotos {
+    margin-top: 120px;
 }
 
-#slide h2 {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 340px;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    letter-spacing: 2px;
+.fotos-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.swiper {
-    width: 350px;
-    height: 230px;
-    margin-bottom: 20px;
+.img-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
 }
 
-.swiper-slide {
-    margin-top: 10px;
-    text-align: center;
+.img-foto {
+    width: 300px;
+    display: block;
+    height: 300px;
 }
 
-.swiper-slide .swiper-img img {
-    width: 180px;
+.texto-sobre-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
 }
 
-.swiper-slide .swiper-texto p {
-    margin-top: 10px;
-}
-
-#slide p {
-    
-}
-
-.swiper-pagination::after {
-    color: #000;
-}
-
-/* ---------- Fim do swiper ---------- */
+/* ---------- FIM da area de modelos de fotos ---------- */
 
 /*Smartphone Landscape*/
 
@@ -74,6 +66,12 @@
     }
 
     /* ---------- FIM da area sobre o meu trabalho ---------- */
+
+    /* ---------- Inicio da area de modelos de fotos ---------- */
+    .img-foto {
+        width: 400px;
+    }
+    /* ---------- FIM da area de modelos de fotos ---------- */
 }
 
 /* ---------- Tablets ---------- */
