@@ -22,16 +22,15 @@
 /* ---------- FIM da area sobre o meu trabalho ---------- */
 
 /* ---------- Inicio da area de modelos de fotos ---------- */
-#modelos-fotos {
+#tipos-fotos {
     margin-top: 120px;
 }
 
 .fotos-port {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    text-align: center;
 }
 
 .img-link {
@@ -39,12 +38,13 @@
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    transition: 0.5s;
 }
 
 .img-foto {
-    width: 300px;
+    width: 330px;
+    height: auto;
     display: block;
-    height: 300px;
 }
 
 .texto-sobre-img {
@@ -52,6 +52,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 400%);
+    font-size: 0.9em;
+    min-width: 300px;
 }
 
 /* ---------- FIM da area de modelos de fotos ---------- */
@@ -71,6 +73,7 @@
     .img-foto {
         width: 400px;
     }
+
     /* ---------- FIM da area de modelos de fotos ---------- */
 }
 
@@ -94,6 +97,23 @@
     }
 
     /* ---------- FIM da area sobre o meu trabalho ---------- */
+
+    /* ---------- Inicio da area de modelos de fotos ---------- */
+
+    .fotos-port {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .img-foto {
+        width: 340px;
+    }
+
+    .texto-sobre-img {
+        font-size: 1em;
+    }
+
+    /* ---------- FIM da area de modelos de fotos ---------- */
 }
 
 /* ---------- Tablets deitados ---------- */
@@ -113,4 +133,30 @@
     }
 
     /* ---------- FIM da area sobre o meu trabalho ---------- */
+
+    /* ---------- Inicio da area de modelos de fotos ---------- */
+
+    .img-foto {
+        width: 400px;
+    }
+
+    .texto-sobre-img {
+        font-size: 1em;
+    }
+
+    /* ---------- FIM da area de modelos de fotos ---------- */
+}
+
+@media (min-width: 1200px){
+    /* ---------- Inicio da area de modelos de fotos ---------- */
+
+    .img-foto {
+        width: 400px;
+    }
+
+    .texto-sobre-img {
+        font-size: 1em;
+    }
+
+    /* ---------- FIM da area de modelos de fotos ---------- */
 }
