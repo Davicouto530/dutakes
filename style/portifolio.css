@@ -64,6 +64,11 @@
     max-width: 340px;
 }
 
+#reservando-sessao .sessao {
+    display: flex;
+    flex-direction: column;
+}
+
 #reservando-sessao h3 {
     margin-bottom: 50px;
 }
@@ -106,7 +111,7 @@
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
-        max-width: 480px;
+        max-width: 520px;
     }
 
     #reservando-sessao a span.setinha-port {
@@ -153,6 +158,19 @@
     }
 
     /* ---------- FIM da area de modelos de fotos ---------- */
+
+    /* ---------- Inicio da area de reservando a sua sessão ---------- */
+    #reservando-sessao {
+        max-width: 680px;
+    }
+
+    #reservando-sessao .sessao {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 /* ---------- Tablets deitados ---------- */
@@ -184,6 +202,17 @@
     }
 
     /* ---------- FIM da area de modelos de fotos ---------- */
+
+    /* ---------- Inicio da area de reservando a sua sessão ---------- */
+    #reservando-sessao {
+        max-width: 850px;
+    }
+
+    #reservando-sessao .sessao {
+        gap: 60px;
+    }
+
+    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 @media (min-width: 1200px) {
@@ -198,4 +227,15 @@
     }
 
     /* ---------- FIM da area de modelos de fotos ---------- */
+
+    /* ---------- Inicio da area de reservando a sua sessão ---------- */
+    #reservando-sessao {
+        max-width: 900px;
+    }
+
+    #reservando-sessao .sessao {
+        gap: 80px;
+    }
+
+    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
