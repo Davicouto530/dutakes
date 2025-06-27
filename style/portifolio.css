@@ -58,6 +58,34 @@
 
 /* ---------- FIM da area de modelos de fotos ---------- */
 
+/* ---------- Inicio da area de reservando a sua sessão ---------- */
+#reservando-sessao {
+    margin: 120px auto;
+    max-width: 340px;
+}
+
+#reservando-sessao h3 {
+    margin-bottom: 50px;
+}
+
+#reservando-sessao h4 {
+    margin-bottom: 20px;
+}
+
+#reservando-sessao p {
+    margin-bottom: 60px;
+}
+
+#reservando-sessao a {
+    font-size: 17px;
+}
+
+#reservando-sessao a span.setinha-port {
+    margin-left: 140px;
+}
+
+/* ---------- FIM da area de reservando a sua sessão ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -75,6 +103,17 @@
     }
 
     /* ---------- FIM da area de modelos de fotos ---------- */
+
+    /* ---------- Inicio da area de reservando a sua sessão ---------- */
+    #reservando-sessao {
+        max-width: 480px;
+    }
+
+    #reservando-sessao a span.setinha-port {
+        margin-left: 20px;
+    }
+
+    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -147,7 +186,7 @@
     /* ---------- FIM da area de modelos de fotos ---------- */
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     /* ---------- Inicio da area de modelos de fotos ---------- */
 
     .img-foto {
