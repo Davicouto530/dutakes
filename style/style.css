@@ -175,19 +175,32 @@ header nav h1 {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        list-style: none;
-        gap: 40px;
+        align-items: center;
+        gap: 20px;
+        /* espaço entre os itens */
         position: static;
         background-color: transparent;
     }
 
+    .nav-list li {
+        transform: none;
+        /* remove o deslocamento do mobile */
+        margin: 0;
+        /* remove margem lateral extra */
+    }
+
     .nav-list li:first-child {
-        margin-top: 0px;
+        margin: 0;
+        /* reseta a margem especial */
+    }
+
+    .nav-item a {
+        display: inline-block;
+        padding: 10px;
     }
 
     .nav-item.active a {
         border-bottom: 3px solid black;
-
     }
 
     #menu-icon {

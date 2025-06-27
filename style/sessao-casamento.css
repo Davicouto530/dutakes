@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#explore-pacotes {
+    margin-top: 60px;
+}
+
+.img-pacotes {
+    width: 95%;
+    height: 380px;
+    background: url("../img/img2.jpg") no-repeat center/cover;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-pacotes p {
+    margin-bottom: 10px;
+}
+
+.btn-explore {
+    color: #fff;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 180px;
+}
+
+.btn-explore:hover {
+    color: #000;
+    background: #fff;
+}
