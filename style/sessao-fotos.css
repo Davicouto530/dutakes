@@ -46,6 +46,7 @@
 
 #sessao-fotos h1 {
     text-transform: uppercase;
+    letter-spacing: 1px;
     margin-top: 50px;
 }
 
@@ -69,7 +70,6 @@
     height: auto;
     display: block;
     margin-bottom: 20px;
-    border-radius: 8px;
     break-inside: avoid;
 }
 
@@ -211,6 +211,11 @@
     .img-meio-sessao {
         width: 70%;
         height: auto;
+    }
+
+    #sessao-fotos h1 {
+        letter-spacing: 2px;
+        margin-top: 80px;
     }
 
     .texto-casamento p {
