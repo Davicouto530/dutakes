@@ -27,9 +27,8 @@
 }
 
 .fotos-port {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    column-count: 1;
+    padding: 20px;
     text-align: center;
 }
 
@@ -42,9 +41,11 @@
 }
 
 .img-foto {
-    width: 330px;
+    width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 20px;
+    break-inside: avoid;
 }
 
 .texto-sobre-img {
@@ -145,8 +146,8 @@
     /* ---------- Inicio da area de modelos de fotos ---------- */
 
     .fotos-port {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        column-count: 2;
+        column-gap: 15px;
     }
 
     .img-foto {
@@ -192,15 +193,19 @@
     /* ---------- FIM da area sobre o meu trabalho ---------- */
 
     /* ---------- Inicio da area de modelos de fotos ---------- */
+    .fotos-port {
+        column-count: 2;
+    }
 
     .img-foto {
         width: 400px;
+        height: auto;
     }
 
     .texto-sobre-img {
+        transform: translate(-50%, 260%);
         font-size: 1em;
     }
-
     /* ---------- FIM da area de modelos de fotos ---------- */
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
@@ -218,8 +223,12 @@
 @media (min-width: 1200px) {
     /* ---------- Inicio da area de modelos de fotos ---------- */
 
+    .fotos-port {
+        column-count: 2;
+    }
+
     .img-foto {
-        width: 400px;
+        width: 500px;
     }
 
     .texto-sobre-img {

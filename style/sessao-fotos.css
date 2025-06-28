@@ -1,50 +1,8 @@
 @charset "UTF-8";
 
-/* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-#sessao-fotos {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.img-inicio-sessao {
-    width: 340px;
-    height: 280px;
-}
-
-#sessao-fotos h1 {
-    text-transform: uppercase;
-    margin-top: 50px;
-}
-
-.texto-casamento {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.texto-casamento p {
-    text-align: left;
-    margin: 60px 0px;
-}
-
-.fotos-casamento {
-    column-count: 1;
-    padding: 20px;
-}
-
-.fotos-casamento img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    break-inside: avoid;
-}
-
-/* ---------- FIM da area de sessao de fotos de casamentos ---------- */
-
 /* ---------- Inicio da area para entrar em contato ---------- */
 #img-contato {
-    margin-top: 120px;
+    margin-top: 10px;
 }
 
 .img-contato {
@@ -79,6 +37,71 @@
 }
 
 /* ---------- FIM da area para entrar em contato ---------- */
+
+/* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
+#sessao-fotos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#sessao-fotos h1 {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.texto-casamento {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texto-casamento p {
+    text-align: left;
+    margin: 60px 0px;
+}
+
+.fotos-casamento {
+    column-count: 1;
+    padding: 20px;
+}
+
+.fotos-casamento img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    break-inside: avoid;
+}
+
+/* ---------- FIM da area de sessao de fotos de casamentos ---------- */
+
+/* ---------- Inicio da area da foto do meio ---------- */
+.div-foto-meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px auto;
+}
+
+.coluna .div-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    margin: 30px;
+    height: auto;
+    background-color: rgb(239, 239, 239);
+}
+
+.img-meio-sessao {
+    width: 260px;
+    padding: 40px;
+    height: auto;
+}
+
+/* ---------- FIM da area da foto do meio ---------- */
 
 /* ---------- Inicio da area de reservando a sua sessão ---------- */
 #reservando-sessao {
@@ -116,14 +139,6 @@
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
-
-    /* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-    .img-inicio-sessao {
-        width: 500px;
-        height: 320px;
-    }
-
-    /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
@@ -169,6 +184,13 @@
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
+    /* ---------- Inicio da area da foto do meio ---------- */
+    .div-foto-meio {
+        flex-direction: row;
+    }
+
+    /* ---------- FIM da area da foto do meio ---------- */
+
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
         max-width: 680px;
@@ -186,7 +208,7 @@
 @media (min-width: 992px) {
 
     /* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-    .img-inicio-sessao {
+    .img-meio-sessao {
         width: 70%;
         height: auto;
     }
@@ -201,6 +223,18 @@
     }
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
+
+    /* ---------- Inicio da area da foto do meio ---------- */
+    .coluna .div-foto {
+        width: 380px;
+    }
+
+    .img-meio-sessao {
+        width: 360px;
+        padding: 50px;
+    }
+
+    /* ---------- FIM da area da foto do meio ---------- */
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
@@ -232,12 +266,23 @@
     }
 
     .fotos-casamento img {
-        width: 200px;
+        width: 250px;
         height: auto;
         border-radius: 8px;
     }
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
+
+    /* ---------- Inicio da area da foto do meio ---------- */
+    .coluna .div-foto {
+        width: 460px;
+    }
+
+    .img-meio-sessao {
+        width: 440px;
+    }
+
+    /* ---------- FIM da area da foto do meio ---------- */
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
