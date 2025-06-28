@@ -1,10 +1,40 @@
 @charset "UTF-8";
 
-#explore-pacotes {
-    margin-top: 60px;
+/* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
+#sessao-fotos {
+    margin-top: 40px;
+    text-align: center;
 }
 
-.img-pacotes {
+.img-inicio-sessao {
+    width: 340px;
+    height: 280px;
+}
+
+.texto-casamento {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texto-casamento p {
+    text-align: left;
+    margin: 60px 0px;
+}
+
+.fotos-casamento img {
+    width: 320px;
+    height: 280px;
+    margin: 25px 0px;
+}
+
+/* ---------- FIM da area de sessao de fotos de casamentos ---------- */
+
+/* ---------- Inicio da area para entrar em contato ---------- */
+#img-contato {
+    margin-top: 120px;
+}
+
+.img-contato {
     width: 95%;
     height: 380px;
     background: url("../img/img2.jpg") no-repeat center/cover;
@@ -17,7 +47,7 @@
     flex-direction: column;
 }
 
-.img-pacotes p {
+.img-contato h1 {
     margin-bottom: 10px;
 }
 
@@ -26,10 +56,32 @@
     margin-top: 10px;
     border: 1px solid #fff;
     padding: 10px;
-    width: 180px;
+    width: 200px;
+    transition: 0.4s ease;
 }
 
 .btn-explore:hover {
     color: #000;
     background: #fff;
 }
+
+/* ---------- FIM da area para entrar em contato ---------- */
+
+/*Smartphone Landscape*/
+
+@media (min-width: 576px) {}
+
+/* ---------- Tablets ---------- */
+@media (min-width: 768px) {
+    .img-contato h1 {
+        font-size: 1.8em;
+    }
+
+    .btn-explore {
+        margin-top: 20px;
+        padding: 12px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 992px) {}
