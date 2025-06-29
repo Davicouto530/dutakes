@@ -39,8 +39,6 @@ header {
     margin: 0 auto;
     background-color: rgb(239, 239, 239);
     color: #000;
-    position: sticky;
-    top: 0px;
 }
 
 header nav h1 {
@@ -172,9 +170,6 @@ header nav h1 {
 }
 
 @media (min-width: 992px) {
-    header {
-        z-index: 10;
-    }
 
     .nav-list {
         display: flex;
