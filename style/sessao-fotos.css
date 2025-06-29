@@ -50,22 +50,22 @@
     margin-top: 50px;
 }
 
-.texto-casamento {
+.texto {
     width: 90%;
     margin: 0 auto;
 }
 
-.texto-casamento p {
+.texto p {
     text-align: left;
     margin: 60px 0px;
 }
 
-.fotos-casamento {
+.fotos-item {
     column-count: 1;
     padding: 20px;
 }
 
-.fotos-casamento img {
+.fotos-item img {
     width: 100%;
     height: auto;
     display: block;
@@ -78,27 +78,28 @@
 /* ---------- Inicio da area da foto do meio ---------- */
 .div-foto-meio {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 80px auto;
-}
-
-.coluna .div-foto {
-    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 280px;
-    margin: 30px;
-    height: auto;
-    background-color: rgb(239, 239, 239);
+    margin-top: 60px;
 }
 
-.img-meio-sessao {
-    width: 260px;
-    padding: 40px;
-    height: auto;
+.div-foto-meio .coluna {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-foto-meio .div-foto {
+    background-color: rgb(239, 239, 239);
+    width: 160px;
+    text-align: center;
+    margin: 20px 10px;
+    box-shadow: 3px 2px 8px 0px #000;
+}
+
+.div-foto-meio .div-foto img {
+    width: 140px;
+    padding: 10px 0px;
 }
 
 /* ---------- FIM da area da foto do meio ---------- */
@@ -140,6 +141,16 @@
 
 @media (min-width: 576px) {
 
+    .div-foto-meio .div-foto {
+        width: 220px;
+        margin: 30px 20px;
+    }
+
+    .div-foto-meio .div-foto img {
+        padding: 20px 0px;
+        width: 180px;
+    }
+
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
         max-width: 520px;
@@ -165,19 +176,19 @@
     }
 
     /* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-    .texto-casamento {
+    .texto {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
 
-    .texto-casamento p {
+    .texto p {
         text-align: center;
         margin: 60px 20px;
     }
 
-    .fotos-casamento {
+    .fotos-item {
         column-count: 2;
         column-gap: 15px;
     }
@@ -185,8 +196,20 @@
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
     /* ---------- Inicio da area da foto do meio ---------- */
-    .div-foto-meio {
-        flex-direction: row;
+    .div-foto-meio .div-foto {
+        width: 260px;
+        margin: 40px 30px;
+    }
+
+    .div-foto-meio .div-foto img {
+        width: 220px;
+        transition: all 0.5s ease;
+        padding: 20px 0px;
+    }
+
+    .div-foto-meio .div-foto img:hover {
+        transform: scale(1.01);
+        cursor: pointer;
     }
 
     /* ---------- FIM da area da foto do meio ---------- */
@@ -208,35 +231,71 @@
 @media (min-width: 992px) {
 
     /* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-    .img-meio-sessao {
-        width: 70%;
-        height: auto;
-    }
-
     #sessao-fotos h1 {
         letter-spacing: 2px;
         margin-top: 80px;
     }
 
-    .texto-casamento p {
+    .texto p {
         margin: 100px 20px;
     }
 
-    .fotos-casamento {
+    .fotos-item {
         column-count: 3;
         column-gap: 25px;
+    }
+
+    .fotos-item img {
+       object-fit: cover;
+    }
+
+    .fotos-item img:nth-child(1) {
+        height: 300px;
+    }
+
+    .fotos-item img:nth-child(2) {
+        height: 220px;
+    }
+
+    .fotos-item img:nth-child(3) {
+        height: 280px;
+    }
+
+    .fotos-item img:nth-child(4) {
+        height: 350px;
+    }
+
+    .fotos-item img:nth-child(6) {
+        height: 380px;
+    }
+
+    .fotos-item img:nth-child(8) {
+        height: 440px;
+    }
+
+    .fotos-item img:nth-child(9) {
+        height: 380px;
+    }
+
+    .fotos-item img:nth-child(11) {
+        height: 400px;
+    }
+
+    .fotos-item img:nth-child(12) {
+        height: 380px;
     }
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
     /* ---------- Inicio da area da foto do meio ---------- */
-    .coluna .div-foto {
-        width: 380px;
+    .div-foto-meio .div-foto {
+        width: 360px;
+        margin: 30px 20px;
     }
 
-    .img-meio-sessao {
-        width: 360px;
-        padding: 50px;
+    .div-foto-meio .div-foto img {
+        width: 320px;
+        padding: 20px 0px;
     }
 
     /* ---------- FIM da area da foto do meio ---------- */
@@ -256,35 +315,25 @@
 @media (min-width: 1200px) {
 
     /* ---------- Inicio da area de sessao de fotos de casamentos ---------- */
-    .texto-casamento p {
+    .texto p {
         max-width: 450px;
     }
 
-    .fotos-casamento {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    .fotos-casamento img {
-        width: 250px;
-        height: auto;
-        border-radius: 8px;
+    .fotos-item {
+        column-count: 3;
     }
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
     /* ---------- Inicio da area da foto do meio ---------- */
-    .coluna .div-foto {
-        width: 460px;
+    .div-foto-meio .div-foto {
+        width: 440px;
+        margin: 30px 20px;
     }
 
-    .img-meio-sessao {
-        width: 440px;
+    .div-foto-meio .div-foto img {
+        width: 400px;
+        padding: 20px 0px;
     }
 
     /* ---------- FIM da area da foto do meio ---------- */

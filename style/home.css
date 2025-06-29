@@ -145,6 +145,7 @@
     padding: 12px;
     color: #fff;
     font-size: 1.2em;
+    transition: 0.5s;
 }
 
 /* ---------- FIM da area galeria ---------- */
@@ -396,6 +397,7 @@
         margin-bottom: 25px;
         font-size: 0.9em;
     }
+
     /* ---------- FIM da area sobre ---------- */
 
     .fundo {
@@ -512,20 +514,20 @@
     /* ---------- Area sobre ---------- */
     #caixa {
         min-width: 850px;
-        min-height: 550px;
+        min-height: 500px;
         flex-direction: row;
         margin: 30px 0px;
     }
 
     .img-sobre img {
         max-width: 400px;
-        height: 440px;
+        height: 400px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
 
     .texto-link {
-        height: 440px;
+        height: 400px;
         max-width: 400px;
         padding: 40px;
     }
@@ -537,6 +539,12 @@
     .texto-link p {
         margin-bottom: 30px;
         font-size: 0.9em;
+    }
+
+    .conteudo-galeria a:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #000;
     }
 
     /* ---------- Inicio da area de cards ---------- */
@@ -564,6 +572,11 @@
     .cards p {
         max-width: 280px;
         margin: 25px 0px 40px 0px;
+    }
+
+    .botao-cards:hover {
+        cursor: pointer;
+        transform: scale(1.05);
     }
 
     /* ---------- FIM da area de cards ---------- */
