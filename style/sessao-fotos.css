@@ -250,11 +250,11 @@
     }
 
     .fotos-item img:nth-child(1) {
-        height: 300px;
+        height: 370px;
     }
 
     .fotos-item img:nth-child(2) {
-        height: 220px;
+        height: 380px;
     }
 
     .fotos-item img:nth-child(3) {
@@ -262,7 +262,11 @@
     }
 
     .fotos-item img:nth-child(4) {
-        height: 350px;
+        height: 360px;
+    }
+
+    .fotos-item img:nth-child(5) {
+        height: 340px;
     }
 
     .fotos-item img:nth-child(6) {

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* ---------- Inicio da area do banner  ---------- */
+#banner-dicas {
+    margin-top: 20px;
+}
+
+.banner {
+    width: 99%;
+    height: 380px;
+    background: url("../img/img2.jpg") no-repeat center/cover;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---------- FIM da area do banner  ---------- */
+
+/*Smartphone Landscape*/
+
+@media (min-width: 576px) {}
+
+/* ---------- Tablets ---------- */
+@media (min-width: 768px) {
+}
+
+/* ---------- Tablets deitados ---------- */
+@media (min-width: 992px) {
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1200px){
+
+}

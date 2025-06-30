@@ -169,6 +169,7 @@ header nav h1 {
     }
 }
 
+/* ---------- Tablets deitados ---------- */
 @media (min-width: 992px) {
 
     .nav-list {
@@ -242,4 +243,9 @@ header nav h1 {
     .borda {
         width: 650px;
     }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1200px){
+
 }
