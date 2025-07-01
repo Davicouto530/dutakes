@@ -24,6 +24,45 @@
 
 /* ---------- FIM da area do banner  ---------- */
 
+/* ---------- Inicio da area de dicas de camêras ---------- */
+#dicas-camera {
+    margin-top: 120px;
+}
+
+.coluna-camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.coluna-camera .camera-texto {
+    margin-bottom: 25px;
+}
+
+.coluna-camera .camera-texto h1 {
+    max-width: 320px;
+}
+
+.coluna-camera .camera-texto p {
+    margin: 20px 0px;
+    max-width: 320px;
+}
+
+.coluna-camera .camera-texto a {
+    text-transform: lowercase;
+}
+
+.coluna-camera .camera-texto a > i {
+    margin-right: 5px;
+}
+
+.coluna-camera img {
+    width: 320px;
+}
+/* ---------- FIM da area de dicas de camêras ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {}
