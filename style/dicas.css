@@ -26,7 +26,7 @@
 
 /* ---------- Inicio da area de dicas ---------- */
 .dicas {
-    margin-top: 120px;
+    margin: 120px 0px;
 }
 
 .coluna-dicas {
@@ -70,6 +70,7 @@
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
+
     /* ---------- Inicio da area de dicas ---------- */
     .coluna-dicas .dicas-texto h1 {
         max-width: 400px;
@@ -91,7 +92,57 @@
 @media (min-width: 768px) {}
 
 /* ---------- Tablets deitados ---------- */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /* ---------- Inicio da area de dicas ---------- */
+    .dicas {
+        margin: 160px 0px;
+    }
+
+    .coluna-dicas {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .coluna-dicas .dicas-texto h1 {
+        max-width: 420px;
+    }
+
+    .coluna-dicas .dicas-texto p {
+        margin: 40px 0px;
+        max-width: 420px;
+    }
+
+    .coluna-dicas img {
+        width: 420px;
+    }
+
+    /* ---------- FIM da area de dicas ---------- */
+}
 
 /* ---------- Desktop ---------- */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    /* ---------- Inicio da area de dicas ---------- */
+    .dicas {
+        margin: 180px 0px;
+    }
+
+    .coluna-dicas {
+        gap: 80px;
+    }
+
+    .coluna-dicas .dicas-texto h1 {
+        max-width: 480px;
+    }
+
+    .coluna-dicas .dicas-texto p {
+        max-width: 480px;
+    }
+
+    .coluna-dicas img {
+        width: 480px;
+    }
+
+    /* ---------- FIM da area de dicas ---------- */
+}
