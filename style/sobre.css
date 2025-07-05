@@ -136,8 +136,8 @@
 
     /* ---------- Area sobre ---------- */
     #caixa {
-        min-width: 720px;
-        min-height: 420px;
+        min-width: 700px;
+        min-height: 400px;
         flex-direction: row;
         margin: 30px 0px;
     }
@@ -190,6 +190,29 @@
 }
 
 @media (min-width: 992px) {
+    /* ---------- Area sobre ---------- */
+    #caixa {
+        min-width: 780px;
+        min-height: 480px;
+        margin: 40px 0px;
+    }
+
+    .img-sobre img {
+        max-width: 360px;
+        height: 380px;
+    }
+
+    .texto-link {
+        height: 380px;
+        max-width: 360px;
+        padding: 30px;
+    }
+
+    .texto-link p {
+        font-size: 1em;
+    }
+
+    /* ---------- FIM da area sobre ---------- */
 
     /* ---------- Inicio da area sobre2 ---------- */
     #caixa2 {
@@ -200,7 +223,7 @@
 
     .img-sobre2 img {
         width: 550px;
-        height: 340px;
+        height: auto;
         margin-bottom: 0px;
         margin-right: 60px;
     }
