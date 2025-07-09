@@ -49,6 +49,36 @@
 
 /* ---------- FIM da area de entrada ---------- */
 
+/* ---------- Inicio da area de cadastro ---------- */
+#cadastro {
+    margin-top: 120px;
+}
+
+#cadastro form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input, select, textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.formulario label {
+    align-self: flex-start;
+    margin: 25px 0px 5px 0px;
+}
+/* ---------- FIM da area de cadastro ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
