@@ -74,11 +74,9 @@
 }
 
 .formulario select {
-    padding: 10px;
-}
-
-.formulario #data {
-    padding: 10px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
 }
 
 .formulario label {
