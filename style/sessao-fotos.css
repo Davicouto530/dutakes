@@ -104,39 +104,6 @@
 
 /* ---------- FIM da area da foto do meio ---------- */
 
-/* ---------- Inicio da area de reservando a sua sessão ---------- */
-#reservando-sessao {
-    margin: 120px auto;
-    max-width: 340px;
-}
-
-#reservando-sessao .sessao {
-    display: flex;
-    flex-direction: column;
-}
-
-#reservando-sessao h3 {
-    margin-bottom: 50px;
-}
-
-#reservando-sessao h4 {
-    margin-bottom: 20px;
-}
-
-#reservando-sessao p {
-    margin-bottom: 60px;
-}
-
-#reservando-sessao a {
-    font-size: 17px;
-}
-
-#reservando-sessao a span.setinha-port {
-    margin-left: 140px;
-}
-
-/* ---------- FIM da area de reservando a sua sessão ---------- */
-
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -150,17 +117,6 @@
         padding: 20px 0px;
         width: 180px;
     }
-
-    /* ---------- Inicio da area de reservando a sua sessão ---------- */
-    #reservando-sessao {
-        max-width: 520px;
-    }
-
-    #reservando-sessao a span.setinha-port {
-        margin-left: 20px;
-    }
-
-    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -213,19 +169,6 @@
     }
 
     /* ---------- FIM da area da foto do meio ---------- */
-
-    /* ---------- Inicio da area de reservando a sua sessão ---------- */
-    #reservando-sessao {
-        max-width: 680px;
-    }
-
-    #reservando-sessao .sessao {
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 @media (min-width: 992px) {
@@ -303,17 +246,6 @@
     }
 
     /* ---------- FIM da area da foto do meio ---------- */
-
-    /* ---------- Inicio da area de reservando a sua sessão ---------- */
-    #reservando-sessao {
-        max-width: 850px;
-    }
-
-    #reservando-sessao .sessao {
-        gap: 60px;
-    }
-
-    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
 
 @media (min-width: 1200px) {
@@ -341,15 +273,4 @@
     }
 
     /* ---------- FIM da area da foto do meio ---------- */
-
-    /* ---------- Inicio da area de reservando a sua sessão ---------- */
-    #reservando-sessao {
-        max-width: 900px;
-    }
-
-    #reservando-sessao .sessao {
-        gap: 80px;
-    }
-
-    /* ---------- FIM da area de reservando a sua sessão ---------- */
 }
