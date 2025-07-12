@@ -55,7 +55,7 @@
 }
 
 #caixa2 {
-    min-width: 400px;
+    min-width: 300px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
     text-align: justify;
     letter-spacing: -1px;
     margin: 20px 0px;
-    max-width: 300px;
+    max-width: 320px;
     line-height: 1.4em;
 }
 
@@ -89,7 +89,7 @@
 }
 
 #fotos-sobre img {
-    width: 340px;
+    width: 320px;
 }
 
 /* ---------- FIM da area fotos sobre ---------- */
