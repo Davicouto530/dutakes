@@ -520,20 +520,20 @@
     }
 
     .img-sobre img {
-        max-width: 400px;
-        height: 400px;
+        max-width: 380px;
+        height: 380px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
 
     .texto-link {
-        height: 400px;
-        max-width: 400px;
+        height: 380px;
+        max-width: 380px;
         padding: 40px;
     }
 
     .texto-link h2 {
-        margin: 30px 0px;
+        margin: 10px 0px;
     }
 
     .texto-link p {
