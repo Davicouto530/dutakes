@@ -1,3 +1,4 @@
+// Menu hamburguer
 let menuIcon = document.querySelector('#menu-icon');
 let ul = document.querySelector('.nav-list');
 
@@ -39,6 +40,7 @@ const dataAno = data.getFullYear();
 
 pRodape.innerHTML += ` ${dataAno} fotografias de dutakes`;
 
+// Efeito scroll animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);

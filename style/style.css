@@ -272,7 +272,7 @@ header nav h1 {
         padding: 10px;
     }
 
-    .nav-item.active a {
+    .nav-item.active {
         border-bottom: 3px solid black;
     }
 
