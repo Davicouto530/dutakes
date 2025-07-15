@@ -71,6 +71,7 @@
     display: block;
     margin-bottom: 20px;
     break-inside: avoid;
+    cursor: pointer;
 }
 
 /* ---------- FIM da area de sessao de fotos de casamentos ---------- */

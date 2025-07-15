@@ -10,7 +10,7 @@
 
 #caixa {
     min-width: 330px;
-    min-height: 700px;
+    min-height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 .img-sobre img {
     width: 300px;
-    height: 260px;
+    height: auto;
     margin: 0px 0px 30px 0px;
 }
 
