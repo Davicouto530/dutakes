@@ -55,3 +55,31 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+// ---------- Inicio da area de lightbox ----------
+// Seleciona todos os itens com a imagem
+const imagens = document.querySelectorAll('.fotos-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close-lightbox');
+
+// Ao clicar na imagem, abre no lightbox
+imagens.forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.remove('lightbox-hidden');
+  });
+});
+
+// Fecha o lightbox ao clicar no botão
+closeBtn.addEventListener('click', () => {
+  lightbox.classList.add('lightbox-hidden');
+});
+
+// Fecha ao clicar fora da imagem
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.add('lightbox-hidden');
+  }
+});
+
+
