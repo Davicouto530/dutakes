@@ -44,10 +44,10 @@ pRodape.innerHTML += ` ${dataAno} fotografias de dutakes`;
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
             observer.unobserve(entry.target);
-        }else {
+        } else {
             entry.target.classList.remove('show');
         }
     });
@@ -64,22 +64,25 @@ const closeBtn = document.querySelector('.close-lightbox');
 
 // Ao clicar na imagem, abre no lightbox
 imagens.forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightbox.classList.remove('lightbox-hidden');
-  });
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.remove('lightbox-hidden');
+    });
 });
 
 // Fecha o lightbox ao clicar no botão
 closeBtn.addEventListener('click', () => {
-  lightbox.classList.add('lightbox-hidden');
+    lightbox.classList.add('lightbox-hidden');
 });
 
 // Fecha ao clicar fora da imagem
 lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) {
-    lightbox.classList.add('lightbox-hidden');
-  }
+    if (e.target === lightbox) {
+        lightbox.classList.add('lightbox-hidden');
+    }
 });
 
-
+function abrirDropdown() {
+    const menu = document.querySelector('.dropdown .menu');
+    menu.classList.toggle('show');
+}

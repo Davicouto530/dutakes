@@ -400,10 +400,6 @@
 
     /* ---------- FIM da area sobre ---------- */
 
-    .fundo {
-        background-attachment: fixed;
-    }
-
     /* ---------- Inicio da area de cards ---------- */
     .containerCards {
         display: flex;

@@ -95,6 +95,53 @@ header nav h1 {
 
 /* ---------- Fim do cabeçalho ---------- */
 
+/* ---------- Inicio do dropdown ---------- */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.dropdown>a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.dropdown > span {
+    font-size: 20px;
+    color: #000;
+    translate: 0 2px;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 8px 0px;
+    display: grid;
+    background-color: rgb(239, 239, 239);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown .menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu>a {
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+/* ---------- FIM do dropdown ---------- */
+
 /* ---------- Inicio do arroba do instagram ---------- */
 
 .arroba-instagram {
@@ -194,7 +241,7 @@ header nav h1 {
 /* ---------- Inicio da animação de scroll ---------- */
 .hidden {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
     transition: all 1.5s ease;
 }
 
@@ -208,6 +255,7 @@ header nav h1 {
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
+
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
         max-width: 520px;
@@ -284,6 +332,52 @@ header nav h1 {
         display: none;
     }
 
+    /* ---------- Inicio do dropdown ---------- */
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .dropdown>a {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .dropdown>a>span {
+        font-size: 20px;
+        color: #000;
+        translate: 0 2px;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: -20px;
+        width: 180px;
+        border-radius: 10px;
+        padding: 8px 0px;
+        display: grid;
+        background-color: rgb(239, 239, 239);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .dropdown .menu.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu>a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* ---------- FIM do dropdown ---------- */
+
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
         max-width: 850px;
@@ -328,8 +422,9 @@ header nav h1 {
 }
 
 /* ---------- Desktop ---------- */
-@media (min-width: 1200px){
-/* ---------- Inicio da area de reservando a sua sessão ---------- */
+@media (min-width: 1200px) {
+
+    /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
         max-width: 900px;
     }
