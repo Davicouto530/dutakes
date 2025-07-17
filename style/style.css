@@ -96,49 +96,12 @@ header nav h1 {
 /* ---------- Fim do cabeçalho ---------- */
 
 /* ---------- Inicio do dropdown ---------- */
-.dropdown {
-    position: relative;
-    cursor: pointer;
-    display: flex;
-}
-
-.dropdown>a {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-
-.dropdown > span {
-    font-size: 20px;
-    color: #000;
-    translate: 0 2px;
-    margin-left: 5px;
-    margin-top: 6px;
+.span-seta {
+    display: none;
 }
 
 .menu {
-    position: absolute;
-    top: 60px;
-    right: -20px;
-    width: 180px;
-    border-radius: 10px;
-    padding: 8px 0px;
-    display: grid;
-    background-color: rgb(239, 239, 239);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    left: 25%;
-}
-
-.dropdown .menu.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.menu>a {
-    padding: 12px 20px;
-    font-size: 14px;
+    display: none;
 }
 
 /* ---------- FIM do dropdown ---------- */
@@ -332,52 +295,6 @@ header nav h1 {
     .icon-li {
         display: none;
     }
-
-    /* ---------- Inicio do dropdown ---------- */
-    .dropdown {
-        position: relative;
-        cursor: pointer;
-    }
-
-    .dropdown>a {
-        display: flex;
-        align-items: center;
-        gap: 2px;
-    }
-
-    .dropdown>a>span {
-        font-size: 20px;
-        color: #000;
-        translate: 0 2px;
-        margin-left: 5px;
-        margin-top: 15px;
-    }
-
-    .menu {
-        position: absolute;
-        top: 60px;
-        right: -20px;
-        width: 180px;
-        border-radius: 10px;
-        padding: 8px 0px;
-        display: grid;
-        background-color: rgb(239, 239, 239);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.3s;
-    }
-
-    .dropdown .menu.show {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .menu>a {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    /* ---------- FIM do dropdown ---------- */
 
     /* ---------- Inicio da area de reservando a sua sessão ---------- */
     #reservando-sessao {
