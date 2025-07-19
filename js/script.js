@@ -29,6 +29,10 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 2,
             spaceBetween: 24
         }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
     }
 });
 
