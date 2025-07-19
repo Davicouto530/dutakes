@@ -200,6 +200,11 @@ header nav h1 {
     font-size: 1.6rem;
 }
 
+#icones-footer {
+    display: flex;
+    gap: 15px;
+}
+
 /* ---------- FIM do rodapé ---------- */
 
 /* ---------- Inicio da animação de scroll ---------- */
@@ -230,6 +235,11 @@ header nav h1 {
     }
 
     /* ---------- FIM da area de reservando a sua sessão ---------- */
+
+    #icones-footer {
+        display: flex;
+        gap: 25px;
+    }
 }
 
 /* ---------- Tablets ---------- */

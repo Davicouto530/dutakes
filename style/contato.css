@@ -96,6 +96,10 @@ textarea {
     border-radius: 0px;
 }
 
+textarea {
+    resize: vertical;
+}
+
 .formulario select,
 #data {
     height: 40px;
