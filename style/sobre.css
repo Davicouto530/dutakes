@@ -10,7 +10,7 @@
 
 #caixa {
     min-width: 330px;
-    min-height: 650px;
+    min-height: 670px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +99,7 @@
 @media (min-width: 576px) {
     #caixa {
         min-width: 450px;
-        min-height: 690px;
+        min-height: 720px;
     }
 
     .img-sobre img {
