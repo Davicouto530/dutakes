@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-.swiper-slide img {
+.swiper-slide .img-swiper-banner {
     width: 250px;
 }
 
@@ -149,6 +149,45 @@
 }
 
 /* ---------- FIM da area galeria ---------- */
+
+/* ---------- Inicio da area de swiper para depoimentos ---------- */
+.swiper-depoim {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.swiper-slide-depoim {
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 2px 1px 5px #000;
+    border-radius: 20px;
+}
+
+#depoimentos {
+    margin: 120px 0px;
+}
+
+#depoimentos h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#depoimentos .borda-embaixo {
+    width: 60px;
+    margin: 0 auto;
+    border-bottom: 3px solid #000;
+}
+
+.img-depoim {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+/* ---------- FIM da area de swiper para depoimentos ---------- */
 
 /* ---------- Inicio da area de cards ---------- */
 #cards-dicas {
@@ -281,7 +320,7 @@
         height: 240px;
     }
 
-    .swiper-slide img {
+    .swiper-slide .img-swiper-banner  {
         width: 310px;
     }
 
@@ -359,7 +398,7 @@
         margin-top: 20px;
     }
 
-    .swiper-slide img {
+    .swiper-slide .img-swiper-banner  {
         width: 350px;
     }
 
@@ -499,7 +538,7 @@
         margin-bottom: 40px;
     }
 
-    .swiper-slide img {
+    .swiper-slide .img-swiper-banner  {
         width: 360px;
     }
 

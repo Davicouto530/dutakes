@@ -93,7 +93,7 @@ header nav h1 {
     left: 50%;
 }
 
-.nav-list li:nth-child(7){
+.nav-list li:nth-child(7) {
     margin-bottom: 80px;
 }
 
@@ -225,6 +225,44 @@ header nav h1 {
 
 /* ---------- FIM da animação de scroll ---------- */
 
+/* ---------- Inicio da area de swiper para depoimentos ---------- */
+.swiper-depoim {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.swiper-slide-depoim {
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 2px 1px 5px #000;
+    border-radius: 20px;
+}
+
+#depoimentos {
+    margin: 120px 0px;
+}
+
+#depoimentos h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#depoimentos .borda-embaixo {
+    width: 60px;
+    margin: 0 auto;
+    border-bottom: 3px solid #000;
+}
+
+.img-depoim {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* ---------- FIM da area de swiper para depoimentos ---------- */
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
@@ -244,6 +282,13 @@ header nav h1 {
         display: flex;
         gap: 25px;
     }
+
+    /* ---------- Inicio do swiper ---------- */
+    .swiper-depoim {
+        width: 420px;
+        height: 240px;
+    }
+    /* ---------- FIM do swiper ---------- */
 }
 
 /* ---------- Tablets ---------- */
@@ -264,6 +309,17 @@ header nav h1 {
     }
 
     /* ---------- FIM da area de reservando a sua sessão ---------- */
+
+    /* ---------- Slide com Swiper JS ----------*/
+    .swiper-depoim {
+        width: 470px;
+        height: 280px;
+    }
+
+    .swiper-slide-depoim {
+        margin-top: 20px;
+    }
+    /* ---------- FIM Slide com Swiper JS ----------*/
 }
 
 /* ---------- Tablets deitados ---------- */
@@ -351,6 +407,14 @@ header nav h1 {
     .borda {
         width: 650px;
     }
+
+    /* ---------- Inicio do Swiper ---------- */
+    .swiper-depoim {
+        width: 960px;
+        height: 280px;
+        margin-bottom: 40px;
+    }
+    /* ---------- FIM do Swiper ---------- */
 }
 
 /* ---------- Desktop ---------- */
