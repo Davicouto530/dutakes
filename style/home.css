@@ -61,7 +61,7 @@
 
 #caixa {
     min-width: 330px;
-    min-height: 710px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,6 +187,10 @@
     border-radius: 50%;
     margin-top: 10px;
 }
+
+.swiper-pagination {
+    transform: translate(100%, 150%);
+}
 /* ---------- FIM da area de swiper para depoimentos ---------- */
 
 /* ---------- Inicio da area de cards ---------- */
@@ -209,7 +213,7 @@
     border-radius: 10px;
     margin: 30px 0px;
     max-width: 300px;
-    height: 470px;
+    height: 490px;
     text-align: center;
     padding: 20px;
 }
@@ -225,6 +229,7 @@
 
 .cards p {
     margin: 25px 0px 35px 0px;
+    font-size: 14px;
 }
 
 .cards .botao-cards {
@@ -326,7 +331,7 @@
 
     #caixa {
         min-width: 450px;
-        min-height: 710px;
+        min-height: 750px;
     }
 
     .img-sobre img {
@@ -341,7 +346,7 @@
 
     /*Galeria*/
     #galeria {
-        height: 400px;
+        height: 420px;
         width: 100%;
     }
 
@@ -356,6 +361,7 @@
     .conteudo-galeria p {
         max-width: 420px;
         margin: 40px auto;
+        font-size: 15px;
     }
 
     .conteudo-galeria a {
@@ -413,19 +419,20 @@
     }
 
     .img-sobre img {
-        max-width: 320px;
-        height: 340px;
+        max-width: 340px;
+        height: 360px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
 
     .texto-link {
-        height: 340px;
-        max-width: 320px;
+        height: 360px;
+        max-width: 340px;
         background-color: #fff;
         margin-top: 0px;
         margin-bottom: 5px;
         padding: 20px;
+        font-size: 15px;
     }
 
     .texto-link h2 {
@@ -453,8 +460,9 @@
     .cards {
         margin: 0px 10px;
         max-width: 230px;
-        height: 450px;
+        height: 455px;
         padding: 15px;
+        font-size: 14px;
     }
 
     .cards img {
@@ -564,7 +572,7 @@
     .texto-link {
         height: 380px;
         max-width: 380px;
-        padding: 40px;
+        padding: 35px;
     }
 
     .texto-link h2 {
@@ -590,8 +598,9 @@
     .cards {
         margin: 0px 20px;
         max-width: 280px;
-        height: 470px;
+        height: 490px;
         padding: 20px;
+        font-size: 16px;
     }
 
     .cards img {
@@ -622,12 +631,12 @@
     }
 
     #fotos-exibicao .coluna {
-        width: 230px;
+        width: 210px;
         margin: 30px 20px;
     }
 
     #fotos-exibicao .coluna img {
-        width: 200px;
+        width: 180px;
         padding: 20px 0px;
     }
 

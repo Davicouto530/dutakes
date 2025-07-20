@@ -99,13 +99,13 @@
 @media (min-width: 576px) {
     #caixa {
         min-width: 450px;
-        min-height: 680px;
+        min-height: 690px;
     }
 
     .img-sobre img {
         width: 380px;
         height: 300px;
-        margin: 10px 0px 30px 0px;
+        margin: 10px 0px 15px 0px;
     }
 
     .texto-link p {
@@ -164,7 +164,7 @@
 
     .texto-link p {
         margin-bottom: 40px;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     /* ---------- FIM da area sobre ---------- */
@@ -205,10 +205,11 @@
     .texto-link {
         height: 360px;
         max-width: 360px;
-        padding: 30px;
+        padding: 25px;
     }
 
     .texto-link p {
+        margin-bottom: 25px;
         font-size: 1em;
     }
 
