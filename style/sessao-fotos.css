@@ -8,7 +8,7 @@
 .img-contato {
     width: 95%;
     height: 380px;
-    background: url("../img/img2.jpg") no-repeat center/cover;
+    background: url("../img/Casamento-Erica&Geison-3.jpg") no-repeat center/cover;
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -72,6 +72,7 @@
     margin-bottom: 20px;
     break-inside: avoid;
     cursor: pointer;
+    object-fit: cover;
 }
 
 /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
@@ -100,6 +101,7 @@
 
 .div-foto-meio .div-foto img {
     width: 140px;
+    height: 140px;
     padding: 10px 0px;
 }
 
@@ -227,10 +229,6 @@
     .fotos-item {
         column-count: 3;
         column-gap: 25px;
-    }
-
-    .fotos-item img {
-       object-fit: cover;
     }
 
     .fotos-item img:nth-child(1) {
