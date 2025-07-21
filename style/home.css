@@ -158,49 +158,6 @@
     margin-top: 50px;
     position: relative;
 }
-
-.swiper-slide-depoim {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-    margin-bottom: 60px;
-}
-
-#depoimentos {
-    margin: 120px 0px;
-}
-
-#depoimentos h2 {
-    text-align: center;
-    margin: 10px 0px;
-}
-
-#depoimentos .borda-embaixo {
-    width: 60px;
-    margin: 0 auto;
-    border-bottom: 3px solid #000;
-}
-
-.img-depoim {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-
-.swiper-slide-depoim h3 {
-    margin: 15px 0px;
-}
-
-.star-depoim {
-    margin: 20px 0px;
-}
-
-.star-depoim i {
-    color: #FFD700;
-}
 /* ---------- FIM da area de swiper para depoimentos ---------- */
 
 /* ---------- Inicio da area de cards ---------- */
