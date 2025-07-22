@@ -12,14 +12,9 @@ menuIcon.addEventListener('click', () => {
     }
 })
 
-// Swiper JS Carrosel
+// Swiper JS depoimentos
 const swiper = new Swiper('.swiper', {
     loop: true,
-    grabCursor: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     breakpoints: {
         992: {
             slidesPerView: 2,
@@ -85,8 +80,3 @@ lightbox.addEventListener('click', (e) => {
         lightbox.classList.add('lightbox-hidden');
     }
 });
-
-function abrirDropdown() {
-    const menu = document.querySelector('.dropdown .menu');
-    menu.classList.toggle('show');
-}
