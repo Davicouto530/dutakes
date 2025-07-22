@@ -158,6 +158,7 @@
     margin-top: 50px;
     position: relative;
 }
+
 /* ---------- FIM da area de swiper para depoimentos ---------- */
 
 /* ---------- Inicio da area de cards ---------- */
@@ -292,7 +293,7 @@
         height: 240px;
     }
 
-    .swiper-slide .img-swiper-banner  {
+    .swiper-slide .img-swiper-banner {
         width: 310px;
     }
 
@@ -316,6 +317,13 @@
         height: 420px;
         width: 100%;
     }
+
+    /* ---------- Inicio da area de swiper para depoimentos ---------- */
+    .swiper-depoim {
+        width: 420px;
+        height: auto;
+    }
+    /* ---------- FIM da area de swiper para depoimentos ---------- */
 
     .conteudo-galeria {
         padding: 50px 20px;
@@ -371,7 +379,7 @@
         margin-top: 20px;
     }
 
-    .swiper-slide .img-swiper-banner  {
+    .swiper-slide .img-swiper-banner {
         width: 350px;
     }
 
@@ -412,6 +420,13 @@
     }
 
     /* ---------- FIM da area sobre ---------- */
+
+    /* ---------- Inicio da area de swiper para depoimentos ---------- */
+    .swiper-depoim {
+        width: 470px;
+        height: auto;
+    }
+    /* ---------- FIM da area de swiper para depoimentos ---------- */
 
     /* ---------- Inicio da area de cards ---------- */
     .containerCards {
@@ -513,7 +528,7 @@
         margin-bottom: 40px;
     }
 
-    .swiper-slide .img-swiper-banner  {
+    .swiper-slide .img-swiper-banner {
         width: 360px;
     }
 
@@ -592,6 +607,13 @@
 
     /* ---------- FIM da area de cards ---------- */
 
+    /* ---------- Inicio da area de swiper para depoimentos ---------- */
+    .swiper-depoim {
+        width: 900px;
+        height: auto;
+    }
+    /* ---------- FIM da area de swiper para depoimentos ---------- */
+
     /* ---------- Inicio da area de fotos exibicao ---------- */
     #fotos-exibicao {
         flex-direction: row;
@@ -668,4 +690,11 @@
     }
 
     /* ---------- FIM da area de fotos exibicao ---------- */
+
+    /* ---------- Inicio da area de swiper para depoimentos ---------- */
+    .swiper-depoim {
+        width: 960px;
+        height: auto;
+    }
+    /* ---------- FIM da area de swiper para depoimentos ---------- */
 }
