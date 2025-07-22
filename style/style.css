@@ -217,7 +217,7 @@ header nav h1 {
 /* ---------- Inicio da animação de scroll ---------- */
 .hidden {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-25px);
     transition: all 1.5s ease;
 }
 
