@@ -27,37 +27,38 @@
 }
 
 .banner {
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .slides {
-  position: relative;
-  width: 95%;
-  height: 500px; /* Defina a altura desejada do banner aqui */
-  margin: 0 auto;
+    position: relative;
+    width: 95%;
+    height: 500px;
+    /* Defina a altura desejada do banner aqui */
+    margin: 0 auto;
 }
 
 .slides img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .slides img.active {
-  opacity: 1;
-  z-index: 1;
+    opacity: 1;
+    z-index: 1;
 }
 
 /* ---------- Fim do swiper ---------- */
@@ -72,7 +73,7 @@
 
 #caixa {
     min-width: 330px;
-    min-height: 800px;
+    min-height: 1050px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,7 +311,7 @@
 
     #caixa {
         min-width: 450px;
-        min-height: 750px;
+        min-height: 1120px;
     }
 
     .img-sobre img {
@@ -334,6 +335,7 @@
         width: 420px;
         height: auto;
     }
+
     /* ---------- FIM da area de swiper para depoimentos ---------- */
 
     .conteudo-galeria {
@@ -381,31 +383,27 @@
         max-width: 460px;
     }
 
-    .swiper {
-        width: 470px;
-        height: 280px;
+    .slides img {
+        transition: 0.6s ease;
     }
 
-    .swiper-slide {
-        margin-top: 20px;
-    }
-
-    .swiper-slide .img-swiper-banner {
-        width: 350px;
+    .slides img:hover {
+        transform: scale(1.02);
+        box-shadow: 2px 2px 5px 0px #000;
     }
 
     /* ---------- FIM Slide com Swiper JS ----------*/
 
     /* ---------- Area sobre ---------- */
     #caixa {
-        min-width: 720px;
+        min-width: 630px;
         min-height: 420px;
         flex-direction: row;
         margin: 30px 0px;
     }
 
     .img-sobre img {
-        max-width: 340px;
+        max-width: 240px;
         height: 360px;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -437,6 +435,7 @@
         width: 470px;
         height: auto;
     }
+
     /* ---------- FIM da area de swiper para depoimentos ---------- */
 
     /* ---------- Inicio da area de cards ---------- */
@@ -549,14 +548,14 @@
 
     /* ---------- Area sobre ---------- */
     #caixa {
-        min-width: 850px;
+        min-width: 750px;
         min-height: 500px;
         flex-direction: row;
         margin: 30px 0px;
     }
 
     .img-sobre img {
-        max-width: 380px;
+        max-width: 260px;
         height: 380px;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -623,6 +622,7 @@
         width: 900px;
         height: auto;
     }
+
     /* ---------- FIM da area de swiper para depoimentos ---------- */
 
     /* ---------- Inicio da area de fotos exibicao ---------- */
@@ -707,5 +707,6 @@
         width: 960px;
         height: auto;
     }
+
     /* ---------- FIM da area de swiper para depoimentos ---------- */
 }
