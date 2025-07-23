@@ -97,8 +97,8 @@
 
 .div-foto-album .div-foto {
     background-color: rgb(239, 239, 239);
-    width: 160px;
-    height: 190px;
+    width: 170px;
+    height: 260px;
     padding: 10px;
     text-align: center;
     margin: 20px 10px;
@@ -114,8 +114,8 @@
 }
 
 .div-foto-album .div-foto .img-foto {
-    width: 95%;
-    height: 150px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
     display: block;
     margin-bottom: 20px;
@@ -309,12 +309,12 @@
     /* ---------- Inicio da area da foto do album ---------- */
 
     .div-foto-album .div-foto {
-        width: 300px;
-        height: 230px;
+        width: 240px;
+        height: 340px;
     }
 
     .div-foto-album .div-foto .img-foto {
-        height: 190px;
+        height: 300px;
     }
 
     /* ---------- FIM da area da foto do album ---------- */

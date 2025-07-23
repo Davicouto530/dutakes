@@ -30,7 +30,7 @@
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .slides {
@@ -50,8 +50,8 @@
   object-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  border-radius: 2px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
   cursor: pointer;
 }
 
