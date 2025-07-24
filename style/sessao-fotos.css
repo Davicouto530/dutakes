@@ -233,11 +233,6 @@
 
     .div-foto-album .div-foto .img-foto {
         height: 240px;
-        transition: all 0.6s ease;
-    }
-
-    .div-foto-meio .div-foto .img-foto:hover {
-        transform: scale(1.01);
         cursor: pointer;
     }
 
