@@ -15,6 +15,7 @@ menuIcon.addEventListener('click', () => {
 // Swiper JS depoimentos
 const swiper = new Swiper('.swiper', {
     loop: true,
+    spaceBetween: 20, // ← Aqui está o espaçamento entre os cards
     breakpoints: {
         992: {
             slidesPerView: 2,
