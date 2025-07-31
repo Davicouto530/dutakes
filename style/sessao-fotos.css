@@ -88,6 +88,7 @@
 .div-foto-album h2 {
     text-align: center;
     margin: 20px 0px;
+    max-width: 300px;
 }
 
 .div-foto-album .coluna {
@@ -117,6 +118,7 @@
     margin-bottom: 20px;
     margin: 0 auto;
 }
+
 /* ---------- FIM da area da foto do album ---------- */
 
 /* ---------- Inicio da area de lightbox ---------- */
@@ -207,6 +209,7 @@
         column-count: 2;
         column-gap: 15px;
     }
+
     .fotos-item img {
         transition: 0.4s ease;
     }
@@ -236,6 +239,10 @@
         cursor: pointer;
     }
 
+    .div-foto-album h2 {
+        min-width: 600px;
+    }
+
     /* ---------- FIM da area da foto do album ---------- */
 }
 
@@ -256,7 +263,7 @@
         column-gap: 25px;
     }
 
-    
+
 
     /* ---------- FIM da area de sessao de fotos de casamentos ---------- */
 
