@@ -72,8 +72,8 @@
 }
 
 #caixa {
-    min-width: 330px;
-    min-height: 1050px;
+    min-width: 340px;
+    min-height: 1070px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,16 +191,17 @@
 .cards {
     background-color: #fff;
     box-shadow: 3px 3px 10px 0px #000;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 30px 0px;
     max-width: 300px;
-    height: 490px;
+    height: 440px;
     text-align: center;
     padding: 20px;
 }
 
-.cards img {
-    width: 260px;
+.icone-cards {
+    font-size: 5em;
+    margin: 20px;
 }
 
 .cards h3 {
@@ -444,7 +445,7 @@
     .cards {
         margin: 0px 10px;
         max-width: 230px;
-        height: 455px;
+        height: 440px;
         padding: 15px;
         font-size: 14px;
         cursor: pointer;
@@ -588,7 +589,7 @@
     .cards {
         margin: 0px 20px;
         max-width: 280px;
-        height: 490px;
+        height: 470px;
         padding: 20px;
         font-size: 16px;
     }
