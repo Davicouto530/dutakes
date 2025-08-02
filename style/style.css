@@ -158,6 +158,8 @@ header nav h1 {
 
 #reservando-sessao p {
     margin-bottom: 60px;
+    line-height: 1.6;
+    hyphens: auto;
 }
 
 #reservando-sessao a {
