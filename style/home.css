@@ -567,11 +567,12 @@
     }
 
     .texto-link h2 {
-        margin: 10px 0px;
+        margin: 0px 0px;
     }
 
     .texto-link p {
         margin-bottom: 30px;
+        margin-top: 10px;
         font-size: 0.9em;
     }
 
