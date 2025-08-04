@@ -1,25 +1,13 @@
 @charset "UTF-8";
 
 /* ---------- Inicio da area do banner  ---------- */
-#banner-dicas {
-    margin-top: 20px;
-}
 
-.banner {
-    width: 99%;
-    height: 380px;
-    background: url("../img/img2.jpg") no-repeat center/cover;
-    margin: 0 auto;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner h1 {
+.titulo h1 {
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
+    margin-top: 60px;
 }
 
 /* ---------- FIM da area do banner  ---------- */
