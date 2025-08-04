@@ -295,6 +295,18 @@ header nav h1 {
 
 /* ---------- FIM da area de swiper para depoimentos ---------- */
 
+/*-----Botão do wpp do lado-----*/
+
+#wpp-lado {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#wpp-lado i {
+    font-size: 3em;
+}
+
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
