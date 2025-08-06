@@ -131,7 +131,11 @@ header nav h1 {
     margin: 50px auto;
 }
 
-.arroba-instagram:hover {
+.arroba-instagram i {
+    margin-left: 10px;
+}
+
+.arroba-instagram:hover, i:hover {
     transform: scale(1.0);
 }
 
