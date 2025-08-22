@@ -1,6 +1,6 @@
 # 📸 Dutakes - Site Profissional de Fotografia
 
-Este é um projeto real desenvolvido para um fotógrafo profissional — meu irmão — com foco em apresentar portfólio, serviços e contato de forma moderna, responsiva e atrativa. O site foi pensado para causar boa impressão visual desde o primeiro acesso e oferecer uma navegação fluida e intuitiva.
+Este é um projeto real desenvolvido para um fotógrafo profissional com foco em apresentar portfólio, serviços e contato de forma moderna, responsiva e atrativa. O site foi pensado para causar boa impressão visual desde o primeiro acesso e oferecer uma navegação fluida e intuitiva.
 
 ---
 
