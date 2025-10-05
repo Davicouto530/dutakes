@@ -4,11 +4,13 @@ Este é um projeto real desenvolvido para um fotógrafo profissional com foco em
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias utilizadas  
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (puro)**
+| Tecnologia | Função |
+|-------------|--------|
+| **HTML5** | Estrutura das páginas |
+| **CSS3** | Estilização |
+| **Javascript** | Javascript puro |
 
 ---
 
