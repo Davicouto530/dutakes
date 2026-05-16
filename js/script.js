@@ -38,7 +38,7 @@ const data = new Date();
 
 const dataAno = data.getFullYear();
 
-pRodape.innerHTML += ` ${dataAno} fotografias de dutakes`;
+pRodape.innerHTML += ` ${dataAno} photographs of dutakes`;
 
 // Efeito scroll animation
 const observer = new IntersectionObserver((entries) => {
