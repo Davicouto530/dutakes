@@ -91,7 +91,7 @@
     /* ---------- Inicio da area sobre o meu trabalho ---------- */
     #sobre-meu-trabalho {
         gap: 40px;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     #sobre-meu-trabalho h2 {
@@ -100,8 +100,7 @@
     }
 
     #sobre-meu-trabalho p {
-        text-align: justify;
-        max-width: 340px;
+        max-width: 600px;
     }
 
     /* ---------- FIM da area sobre o meu trabalho ---------- */
@@ -121,7 +120,7 @@
 
     /* ---------- Inicio da area sobre o meu trabalho ---------- */
     #sobre-meu-trabalho {
-        gap: 100px;
+        gap: 20px;
     }
 
     #sobre-meu-trabalho h2 {
